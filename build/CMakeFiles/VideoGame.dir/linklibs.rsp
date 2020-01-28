@@ -1,0 +1,1 @@
+ R:/Dev/Libraries/C++/SDL2-2.0.10/lib/x86/SDL2.dll R:/Dev/Libraries/C++/SDL2-2.0.10/lib/x86/SDL2main.lib R:/Dev/Libraries/C++/SDL2-2.0.10/lib/x86/SDL2_image.dll R:/Dev/Libraries/C++/SDL2-2.0.10/lib/x86/SDL2_ttf.dll R:/Dev/Libraries/C++/SDL2-2.0.10/lib/x86/SDL2_mixer.dll -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
