@@ -1,4 +1,4 @@
-#include <iostream>
+ #include <iostream>
 #include <SDL2/SDL.h>
 #include "States/state.hpp"
 #include "game.hpp"
@@ -26,9 +26,10 @@ int main ( int argc, char *argv[])
                                 startFrame = SDL_GetTicks();
                                 game->HandleEvents();
                                 game->Update(deltaTime);
-                                game->Render();
+                                game->Render(deltaTime); //does this need deltatime??????
                         }
                 }
+                game->Clean();
                 std::cout << "game exited" << std::endl;
         }
         return 0;

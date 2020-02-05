@@ -1,5 +1,7 @@
-#include "game.hpp"
 #include "States/State.hpp"
+#include "game.hpp"
+//#include "TextureAllocator.hpp"
+#include "Locator.hpp"
 
 SDL_Window* Game::window = nullptr;
 SDL_Renderer* Game::renderer = nullptr;
@@ -32,9 +34,8 @@ bool Game::Init()
                 renderer = SDL_CreateRenderer(window, -1, 0);
                 if (renderer)
                 {
-                        SDL_SetRenderDrawColor(renderer, 144, 144, 144, 255);
+                        SDL_SetRenderDrawColor(renderer, 1, 144, 144, 255);
                         running = true;
-                        return true;
                 }
         }
         else
@@ -43,26 +44,32 @@ bool Game::Init()
                 running = false;
                 return false;
         }
+
+        Locator::provideRenderer(renderer);
+        Locator::provideWindow(window);
+        Locator::getTexureAllocator()->setWindowIcon("../assets/textures/test.png");
+        return true;
 }
 
 void Game::HandleEvents()
 {
-        events.clear();
-        while(SDL_PollEvent(&event))
-        {
-                events.push_back(event);
-                switch (event.type)
-                {
-                case SDL_QUIT:
-                        running = false;
-                        break;
-                default:
-                        if (peekState() != nullptr)
-                        {
-                                peekState()->handleEvents(event); //pass through events vector
-                        }
-                }
-        }
+        /*
+              events.clear();
+              while(SDL_PollEvent(&event))
+              {
+                      events.push_back(event);
+                      switch (event.type)
+                      {
+                      case SDL_QUIT:
+                              running = false;
+                              break;
+                      default:
+                              if (peekState() != nullptr)
+                              {
+                                      peekState()->handleEvents(event); //pass through events vector
+                              }
+                      }
+              }*/
 }
 
 void Game::Update(float deltaTime)
@@ -73,12 +80,12 @@ void Game::Update(float deltaTime)
         }
 }
 
-void Game::Render()
+void Game::Render(float deltaTime)
 {
         SDL_RenderClear(renderer);
         if (peekState() != nullptr)
         {
-                peekState()->render();
+                peekState()->render(deltaTime);
         }
 //render the current state
         SDL_RenderPresent(renderer);

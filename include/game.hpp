@@ -19,7 +19,7 @@ Game();
 bool Init();
 void HandleEvents();
 void Update(float deltaTime);
-void Render();
+void Render(float deltaTime);
 void Clean();
 
 // states

@@ -18,7 +18,7 @@ virtual void handleEvents(SDL_Event e) {
 };
 virtual void update(float deltaTime) {
 };
-virtual void render() {
+virtual void render(float deltaTime) {
 };
 virtual void clean() {
 };
