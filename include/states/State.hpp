@@ -2,7 +2,6 @@
 #define State_hpp
 
 //#include "game.h"
-#include <SDL2/SDL.h>
 
 class Game;
 
@@ -14,7 +13,7 @@ Game* game;
 
 virtual void init() {
 };
-virtual void handleEvents(SDL_Event e) {
+virtual void handleEvents() {
 };
 virtual void update(float deltaTime) {
 };

@@ -73,12 +73,12 @@ clean: CMakeFiles/VideoGame.dir/clean
 CMakeFiles/VideoGame.dir/all:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/depend
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target VideoGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target VideoGame"
 .PHONY : CMakeFiles/VideoGame.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/VideoGame.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start R:\Dev\games\game\build\CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start R:\Dev\games\game\build\CMakeFiles 9
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/VideoGame.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start R:\Dev\games\game\build\CMakeFiles 0
 .PHONY : CMakeFiles/VideoGame.dir/rule

@@ -3,19 +3,44 @@ project (VideoGame)
 
 include_directories(include)
 
-if (NOT DEFINED SDL2_INCLUDE_DIR)
-	message(WARNING "SDL2_INCLUDE_DIR is not set! Example: Add -DSDL2_INCLUDE_DIR=C:\\SDL2\\include")
+
+SET(CMAKE_MODULE_LINKER_FLAGS "-m32 -Wl,--enable-stdcall-fixup ${CMAKE_SHARED_LINKER_FLAGS}")
+
+if (NOT DEFINED GLFW_INCLUDE_DIR)
+	message(WARNING "GLFW_INCLUDE_DIR is not set! Example: Add -DGLFW_INCLUDE_DIR=C:\\GLFW\\include")
 else()
-	message("SDL2_INCLUDE_DIR is set to ${SDL2_INCLUDE_DIR}")
-	include_directories(${SDL2_INCLUDE_DIR})
+	message("GLFW_INCLUDE_DIR is set to ${GLFW_INCLUDE_DIR}")
+	include_directories(${GLFW_INCLUDE_DIR})
 endif()
 
-if (NOT DEFINED SDL2_LIB_DIR)
-	message(WARNING "SDL2_LIB_DIR is not set! Example: Add -DSDL2_LIB_DIR=C:\\SDL2\\include\\lib")
+if (NOT DEFINED GLFW_LIB_DIR)
+	message(WARNING "GLFW_LIB_DIR is not set! Example: Add -DGLFW_LIB_DIR=C:\\GLFW\\include\\lib")
 else()
-	message("SDL2_LIB_DIR is set to ${SDL2_LIB_DIR}")
-	SET(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} ${SDL2_LIB_DIR})	
+	message("GLFW_LIB_DIR is set to ${GLFW_LIB_DIR}")
+	SET(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} ${GLFW_LIB_DIR})	
 endif()
+
+if (NOT DEFINED GLEW_INCLUDE_DIR)
+	message(WARNING "GLEW_INCLUDE_DIR is not set! Example: Add -DGLEW_INCLUDE_DIR=C:\\GLEW\\include")
+else()
+	message("GLEW_INCLUDE_DIR is set to ${GLEW_INCLUDE_DIR}")
+	include_directories(${GLEW_INCLUDE_DIR})
+endif()
+
+if (NOT DEFINED GLM_INCLUDE_DIR)
+	message(WARNING "GLM_INCLUDE_DIR is not set! Example: Add -DGLM_INCLUDE_DIR=C:\\GLEW\\include")
+else()
+	message("GLM_INCLUDE_DIR is set to ${GLM_INCLUDE_DIR}")
+	include_directories(${GLM_INCLUDE_DIR})
+endif()
+
+if (NOT DEFINED GLEW_LIB_DIR)
+	message(WARNING "GLEW_LIB_DIR is not set! Example: Add -DGLEW_LIB_DIR=C:\\GLEW\\include\\lib")
+else()
+	message("GLEW_LIB_DIR is set to ${GLEW_LIB_DIR}")
+	SET(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} ${GLEW_LIB_DIR})	
+endif()
+
 
 IF("${CMAKE_SYSTEM}" MATCHES "Linux" OR "${CMAKE_SYSTEM}" MATCHES "FreeBSD")
 	SET(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -std=c++11 -z defs")
@@ -44,16 +69,14 @@ macro(my_find_library)
     message("-- Library ${ARGV1} found as ${${ARGV0}}")   
 endmacro()
 
-my_find_library(SDL SDL2)
-my_find_library(SDL_MAIN SDL2main)
-my_find_library(SDL_IMAGE SDL2_image)
-my_find_library(SDL_TTF SDL2_ttf)
-my_find_library(SDL_mixer SDL2_mixer)
+my_find_library(glew glew32)
+my_find_library(GLFW glfw3)
+my_find_library(glu glu32)
+my_find_library(opengl opengl32)
 
 TARGET_LINK_LIBRARIES(${PROJECT_NAME} 
-${SDL}
-${SDL_MAIN}
-${SDL_IMAGE}
-${SDL_TTF}
-${SDL_mixer}
+${glew}
+${GLFW}
+${glu}
+${opengl}
 )

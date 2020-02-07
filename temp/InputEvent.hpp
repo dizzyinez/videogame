@@ -2,7 +2,7 @@
 #define InputEvent_hpp
 
 #include "entityx/entityx.h"
-#include <SDL2/SDL.h>
+#include <GLFW/glfw3.h>
 
 struct InputEvent : entityx::Event<InputEvent>
 {

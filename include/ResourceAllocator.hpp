@@ -47,7 +47,6 @@ std::shared_ptr<T> Get(int id)
         {
                 if (std::get<0>(it->second) == id)
                 {
-                        std::cout << "yeas" << std::endl;
                         return std::get<2>(it->second);
                 }
         }
@@ -61,7 +60,6 @@ std::string getFilePath(int id)
         {
                 if (std::get<0>(it->second) == id)
                 {
-                        std::cout << "yeas" << std::endl;
                         return it->first;
                 }
         }

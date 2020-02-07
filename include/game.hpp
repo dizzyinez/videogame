@@ -4,8 +4,9 @@
 #include <iostream>
 #include <vector>
 #include <stack>
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
+
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
 //#include "state.h"
 
 class State;
@@ -16,7 +17,7 @@ bool running;
 
 Game();
 ~Game();
-bool Init();
+bool Init(GLFWwindow* w);
 void HandleEvents();
 void Update(float deltaTime);
 void Render(float deltaTime);
@@ -30,12 +31,8 @@ void popState();
 void changeState(State* state);
 State* peekState();
 
-SDL_Renderer* getRenderer();
+GLFWwindow* window;
 private:
-static SDL_Window *window;
-static SDL_Renderer *renderer;
-static SDL_Event event;
-static std::vector<SDL_Event> events;
 };
 
 #endif

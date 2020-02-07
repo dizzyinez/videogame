@@ -168,33 +168,6 @@ VideoGame/fast:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/build
 .PHONY : VideoGame/fast
 
-src/DrawSystem.obj: src/DrawSystem.cpp.obj
-
-.PHONY : src/DrawSystem.obj
-
-# target to build an object file
-src/DrawSystem.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/DrawSystem.cpp.obj
-.PHONY : src/DrawSystem.cpp.obj
-
-src/DrawSystem.i: src/DrawSystem.cpp.i
-
-.PHONY : src/DrawSystem.i
-
-# target to preprocess a source file
-src/DrawSystem.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/DrawSystem.cpp.i
-.PHONY : src/DrawSystem.cpp.i
-
-src/DrawSystem.s: src/DrawSystem.cpp.s
-
-.PHONY : src/DrawSystem.s
-
-# target to generate assembly for a file
-src/DrawSystem.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/DrawSystem.cpp.s
-.PHONY : src/DrawSystem.cpp.s
-
 src/Entity.obj: src/Entity.cc.obj
 
 .PHONY : src/Entity.obj
@@ -248,87 +221,6 @@ src/Event.s: src/Event.cc.s
 src/Event.cc.s:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Event.cc.s
 .PHONY : src/Event.cc.s
-
-src/InputSystem.obj: src/InputSystem.cpp.obj
-
-.PHONY : src/InputSystem.obj
-
-# target to build an object file
-src/InputSystem.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/InputSystem.cpp.obj
-.PHONY : src/InputSystem.cpp.obj
-
-src/InputSystem.i: src/InputSystem.cpp.i
-
-.PHONY : src/InputSystem.i
-
-# target to preprocess a source file
-src/InputSystem.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/InputSystem.cpp.i
-.PHONY : src/InputSystem.cpp.i
-
-src/InputSystem.s: src/InputSystem.cpp.s
-
-.PHONY : src/InputSystem.s
-
-# target to generate assembly for a file
-src/InputSystem.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/InputSystem.cpp.s
-.PHONY : src/InputSystem.cpp.s
-
-src/Locator.obj: src/Locator.cpp.obj
-
-.PHONY : src/Locator.obj
-
-# target to build an object file
-src/Locator.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Locator.cpp.obj
-.PHONY : src/Locator.cpp.obj
-
-src/Locator.i: src/Locator.cpp.i
-
-.PHONY : src/Locator.i
-
-# target to preprocess a source file
-src/Locator.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Locator.cpp.i
-.PHONY : src/Locator.cpp.i
-
-src/Locator.s: src/Locator.cpp.s
-
-.PHONY : src/Locator.s
-
-# target to generate assembly for a file
-src/Locator.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Locator.cpp.s
-.PHONY : src/Locator.cpp.s
-
-src/MovementSystem.obj: src/MovementSystem.cpp.obj
-
-.PHONY : src/MovementSystem.obj
-
-# target to build an object file
-src/MovementSystem.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/MovementSystem.cpp.obj
-.PHONY : src/MovementSystem.cpp.obj
-
-src/MovementSystem.i: src/MovementSystem.cpp.i
-
-.PHONY : src/MovementSystem.i
-
-# target to preprocess a source file
-src/MovementSystem.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/MovementSystem.cpp.i
-.PHONY : src/MovementSystem.cpp.i
-
-src/MovementSystem.s: src/MovementSystem.cpp.s
-
-.PHONY : src/MovementSystem.s
-
-# target to generate assembly for a file
-src/MovementSystem.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/MovementSystem.cpp.s
-.PHONY : src/MovementSystem.cpp.s
 
 src/Pool.obj: src/Pool.cc.obj
 
@@ -410,33 +302,6 @@ src/System.s: src/System.cc.s
 src/System.cc.s:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/System.cc.s
 .PHONY : src/System.cc.s
-
-src/TextureSystem.obj: src/TextureSystem.cpp.obj
-
-.PHONY : src/TextureSystem.obj
-
-# target to build an object file
-src/TextureSystem.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/TextureSystem.cpp.obj
-.PHONY : src/TextureSystem.cpp.obj
-
-src/TextureSystem.i: src/TextureSystem.cpp.i
-
-.PHONY : src/TextureSystem.i
-
-# target to preprocess a source file
-src/TextureSystem.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/TextureSystem.cpp.i
-.PHONY : src/TextureSystem.cpp.i
-
-src/TextureSystem.s: src/TextureSystem.cpp.s
-
-.PHONY : src/TextureSystem.s
-
-# target to generate assembly for a file
-src/TextureSystem.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/TextureSystem.cpp.s
-.PHONY : src/TextureSystem.cpp.s
 
 src/Timer.obj: src/Timer.cc.obj
 
@@ -532,24 +397,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... install/strip
-	@echo ... src/DrawSystem.obj
-	@echo ... src/DrawSystem.i
-	@echo ... src/DrawSystem.s
 	@echo ... src/Entity.obj
 	@echo ... src/Entity.i
 	@echo ... src/Entity.s
 	@echo ... src/Event.obj
 	@echo ... src/Event.i
 	@echo ... src/Event.s
-	@echo ... src/InputSystem.obj
-	@echo ... src/InputSystem.i
-	@echo ... src/InputSystem.s
-	@echo ... src/Locator.obj
-	@echo ... src/Locator.i
-	@echo ... src/Locator.s
-	@echo ... src/MovementSystem.obj
-	@echo ... src/MovementSystem.i
-	@echo ... src/MovementSystem.s
 	@echo ... src/Pool.obj
 	@echo ... src/Pool.i
 	@echo ... src/Pool.s
@@ -559,9 +412,6 @@ help:
 	@echo ... src/System.obj
 	@echo ... src/System.i
 	@echo ... src/System.s
-	@echo ... src/TextureSystem.obj
-	@echo ... src/TextureSystem.i
-	@echo ... src/TextureSystem.s
 	@echo ... src/Timer.obj
 	@echo ... src/Timer.i
 	@echo ... src/Timer.s

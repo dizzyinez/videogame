@@ -1,8 +1,8 @@
 #ifndef Velocity_hpp
 #define Velocity_hpp
 
-#include "entityx/entityx.h
-#include "vec2.hpp "
+#include "entityx/entityx.h"
+#include "vec2.hpp"
 
 struct Velocity : entityx::Component<Velocity>
 {

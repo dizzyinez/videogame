@@ -5,7 +5,7 @@
 
 struct MovementSystem : public entityx::System<MovementSystem>
 {
-        voidqa update(entityx::EntityManager &es, entityx::EventManager &events, double dt) override;
+        void update(entityx::EntityManager &es, entityx::EventManager &events, double dt) override;
 };
 
 #endif
