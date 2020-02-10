@@ -3,18 +3,15 @@
 
 #include "entityx/entityx.h"
 #include "vec2.hpp"
+#include <glm/vec3.hpp>
 
 struct Transform : entityx::Component<Transform>
 {
-        vec2f position;
-        float height;
-        Transform(float x = 0, float y = 0) : height(0) {
-                position.x = x;
-                position.y = y;
+        glm::vec3 position;
+        //TODO: vec4 rotation
+        Transform(float x = 0, float y = 0) : position(x,y,0.0f){
         }
-        Transform(vec2f pos) : position(pos), height(0) {
-        }
-        Transform(vec2f pos, float h = 0) : position(pos), height(h) {
+        Transform(glm::vec3 pos) : position(pos){
         }
 
         float getX()

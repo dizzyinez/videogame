@@ -168,6 +168,33 @@ VideoGame/fast:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/build
 .PHONY : VideoGame/fast
 
+src/DrawSystem.obj: src/DrawSystem.cpp.obj
+
+.PHONY : src/DrawSystem.obj
+
+# target to build an object file
+src/DrawSystem.cpp.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/DrawSystem.cpp.obj
+.PHONY : src/DrawSystem.cpp.obj
+
+src/DrawSystem.i: src/DrawSystem.cpp.i
+
+.PHONY : src/DrawSystem.i
+
+# target to preprocess a source file
+src/DrawSystem.cpp.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/DrawSystem.cpp.i
+.PHONY : src/DrawSystem.cpp.i
+
+src/DrawSystem.s: src/DrawSystem.cpp.s
+
+.PHONY : src/DrawSystem.s
+
+# target to generate assembly for a file
+src/DrawSystem.cpp.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/DrawSystem.cpp.s
+.PHONY : src/DrawSystem.cpp.s
+
 src/Entity.obj: src/Entity.cc.obj
 
 .PHONY : src/Entity.obj
@@ -222,6 +249,33 @@ src/Event.cc.s:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Event.cc.s
 .PHONY : src/Event.cc.s
 
+src/Locator.obj: src/Locator.cpp.obj
+
+.PHONY : src/Locator.obj
+
+# target to build an object file
+src/Locator.cpp.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Locator.cpp.obj
+.PHONY : src/Locator.cpp.obj
+
+src/Locator.i: src/Locator.cpp.i
+
+.PHONY : src/Locator.i
+
+# target to preprocess a source file
+src/Locator.cpp.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Locator.cpp.i
+.PHONY : src/Locator.cpp.i
+
+src/Locator.s: src/Locator.cpp.s
+
+.PHONY : src/Locator.s
+
+# target to generate assembly for a file
+src/Locator.cpp.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Locator.cpp.s
+.PHONY : src/Locator.cpp.s
+
 src/Pool.obj: src/Pool.cc.obj
 
 .PHONY : src/Pool.obj
@@ -248,6 +302,33 @@ src/Pool.s: src/Pool.cc.s
 src/Pool.cc.s:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Pool.cc.s
 .PHONY : src/Pool.cc.s
+
+src/Renderer.obj: src/Renderer.cpp.obj
+
+.PHONY : src/Renderer.obj
+
+# target to build an object file
+src/Renderer.cpp.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Renderer.cpp.obj
+.PHONY : src/Renderer.cpp.obj
+
+src/Renderer.i: src/Renderer.cpp.i
+
+.PHONY : src/Renderer.i
+
+# target to preprocess a source file
+src/Renderer.cpp.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Renderer.cpp.i
+.PHONY : src/Renderer.cpp.i
+
+src/Renderer.s: src/Renderer.cpp.s
+
+.PHONY : src/Renderer.s
+
+# target to generate assembly for a file
+src/Renderer.cpp.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Renderer.cpp.s
+.PHONY : src/Renderer.cpp.s
 
 src/StateMainMenu.obj: src/StateMainMenu.cpp.obj
 
@@ -384,6 +465,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/shader.obj: src/shader.cpp.obj
+
+.PHONY : src/shader.obj
+
+# target to build an object file
+src/shader.cpp.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/shader.cpp.obj
+.PHONY : src/shader.cpp.obj
+
+src/shader.i: src/shader.cpp.i
+
+.PHONY : src/shader.i
+
+# target to preprocess a source file
+src/shader.cpp.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/shader.cpp.i
+.PHONY : src/shader.cpp.i
+
+src/shader.s: src/shader.cpp.s
+
+.PHONY : src/shader.s
+
+# target to generate assembly for a file
+src/shader.cpp.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/shader.cpp.s
+.PHONY : src/shader.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -397,15 +505,24 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... install/strip
+	@echo ... src/DrawSystem.obj
+	@echo ... src/DrawSystem.i
+	@echo ... src/DrawSystem.s
 	@echo ... src/Entity.obj
 	@echo ... src/Entity.i
 	@echo ... src/Entity.s
 	@echo ... src/Event.obj
 	@echo ... src/Event.i
 	@echo ... src/Event.s
+	@echo ... src/Locator.obj
+	@echo ... src/Locator.i
+	@echo ... src/Locator.s
 	@echo ... src/Pool.obj
 	@echo ... src/Pool.i
 	@echo ... src/Pool.s
+	@echo ... src/Renderer.obj
+	@echo ... src/Renderer.i
+	@echo ... src/Renderer.s
 	@echo ... src/StateMainMenu.obj
 	@echo ... src/StateMainMenu.i
 	@echo ... src/StateMainMenu.s
@@ -421,6 +538,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/shader.obj
+	@echo ... src/shader.i
+	@echo ... src/shader.s
 .PHONY : help
 
 

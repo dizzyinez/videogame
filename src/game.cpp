@@ -1,7 +1,7 @@
 #include "States/State.hpp"
 #include "game.hpp"
 //#include "TextureAllocator.hpp"
-// #include "Locator.hpp"
+#include "Locator.hpp"
 
 Game::Game() {
 }
@@ -42,6 +42,7 @@ bool Game::Init(GLFWwindow* w)
         //         return false;
         // }
         //
+        Locator::Initialize();
         // Locator::provideRenderer(renderer);
         // Locator::provideWindow(window);
         // Locator::getTexureAllocator()->setWindowIcon("../assets/textures/test.png");
@@ -79,22 +80,14 @@ void Game::Update(float deltaTime)
 
 void Game::Render(float deltaTime)
 {
-        glClear( GL_COLOR_BUFFER_BIT );
-
-        glBegin(GL_TRIANGLES);
-        glVertex2f(-0.5f, -0.5f);
-        glVertex2f( 0.0f,  0.5f);
-        glVertex2f( 0.5f, -0.5f);
-        glEnd();
-
-
-        glfwSwapBuffers(window);
-        glfwPollEvents();
+        // glClear( GL_COLOR_BUFFER_BIT );
         // SDL_RenderClear(renderer);
         if (peekState() != nullptr)
         {
                 peekState()->render(deltaTime);
         }
+        // glfwSwapBuffers(window);
+        // glfwPollEvents();
 //render the current state
         // SDL_RenderPresent(renderer);
 }

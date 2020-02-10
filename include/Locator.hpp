@@ -2,27 +2,29 @@
 #define Locator_hpp
 
 #include "ResourceAllocator.hpp"
-#include "TextureAllocator.hpp"
-#include <SDL2/SDL.h>
+#include "Renderer.hpp"
+// #include "TextureAllocator.hpp"
 
 class Locator
 {
 public:
 static void Initialize() {
+        R.Init();
 }
-static TextureAllocator* getTexureAllocator() {
-        return &TA;
-}
-static void provideRenderer(SDL_Renderer* r)
+static Renderer* getRenderer()
 {
-        TA.setRenderer(r);
+        return &R;
 }
-static void provideWindow(SDL_Window* w)
-{
-        TA.setWindow(w);
-}
+// static TextureAllocator* getTexureAllocator() {
+//         return &TA;
+// }
+// static void provideWindow(GLFWwindow* w)
+// {
+//         // TA.setWindow(w);
+// }
 private:
-static TextureAllocator TA;
+static Renderer R;
+// static TextureAllocator TA;
 };
 
 #endif

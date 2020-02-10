@@ -2,7 +2,6 @@
 #define DrawSystem_hpp
 
 #include "entityx/entityx.h"
-
 struct DrawSystem : public entityx::System<DrawSystem>
 {
 public:
