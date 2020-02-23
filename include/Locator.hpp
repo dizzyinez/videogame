@@ -2,7 +2,7 @@
 #define Locator_hpp
 
 #include "ResourceAllocator.hpp"
-#include "Renderer.hpp"
+#include "rendering/Renderer.hpp"
 // #include "TextureAllocator.hpp"
 
 class Locator

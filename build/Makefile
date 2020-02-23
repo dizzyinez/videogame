@@ -168,6 +168,33 @@ VideoGame/fast:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/build
 .PHONY : VideoGame/fast
 
+src/Batch.obj: src/Batch.cpp.obj
+
+.PHONY : src/Batch.obj
+
+# target to build an object file
+src/Batch.cpp.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Batch.cpp.obj
+.PHONY : src/Batch.cpp.obj
+
+src/Batch.i: src/Batch.cpp.i
+
+.PHONY : src/Batch.i
+
+# target to preprocess a source file
+src/Batch.cpp.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Batch.cpp.i
+.PHONY : src/Batch.cpp.i
+
+src/Batch.s: src/Batch.cpp.s
+
+.PHONY : src/Batch.s
+
+# target to generate assembly for a file
+src/Batch.cpp.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Batch.cpp.s
+.PHONY : src/Batch.cpp.s
+
 src/DrawSystem.obj: src/DrawSystem.cpp.obj
 
 .PHONY : src/DrawSystem.obj
@@ -330,6 +357,33 @@ src/Renderer.cpp.s:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Renderer.cpp.s
 .PHONY : src/Renderer.cpp.s
 
+src/Shader.obj: src/Shader.cpp.obj
+
+.PHONY : src/Shader.obj
+
+# target to build an object file
+src/Shader.cpp.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Shader.cpp.obj
+.PHONY : src/Shader.cpp.obj
+
+src/Shader.i: src/Shader.cpp.i
+
+.PHONY : src/Shader.i
+
+# target to preprocess a source file
+src/Shader.cpp.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Shader.cpp.i
+.PHONY : src/Shader.cpp.i
+
+src/Shader.s: src/Shader.cpp.s
+
+.PHONY : src/Shader.s
+
+# target to generate assembly for a file
+src/Shader.cpp.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Shader.cpp.s
+.PHONY : src/Shader.cpp.s
+
 src/StateMainMenu.obj: src/StateMainMenu.cpp.obj
 
 .PHONY : src/StateMainMenu.obj
@@ -438,6 +492,33 @@ src/game.cpp.s:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/game.cpp.s
 .PHONY : src/game.cpp.s
 
+src/loadShader.obj: src/loadShader.cpp.obj
+
+.PHONY : src/loadShader.obj
+
+# target to build an object file
+src/loadShader.cpp.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/loadShader.cpp.obj
+.PHONY : src/loadShader.cpp.obj
+
+src/loadShader.i: src/loadShader.cpp.i
+
+.PHONY : src/loadShader.i
+
+# target to preprocess a source file
+src/loadShader.cpp.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/loadShader.cpp.i
+.PHONY : src/loadShader.cpp.i
+
+src/loadShader.s: src/loadShader.cpp.s
+
+.PHONY : src/loadShader.s
+
+# target to generate assembly for a file
+src/loadShader.cpp.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/loadShader.cpp.s
+.PHONY : src/loadShader.cpp.s
+
 src/main.obj: src/main.cpp.obj
 
 .PHONY : src/main.obj
@@ -465,33 +546,6 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/shader.obj: src/shader.cpp.obj
-
-.PHONY : src/shader.obj
-
-# target to build an object file
-src/shader.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/shader.cpp.obj
-.PHONY : src/shader.cpp.obj
-
-src/shader.i: src/shader.cpp.i
-
-.PHONY : src/shader.i
-
-# target to preprocess a source file
-src/shader.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/shader.cpp.i
-.PHONY : src/shader.cpp.i
-
-src/shader.s: src/shader.cpp.s
-
-.PHONY : src/shader.s
-
-# target to generate assembly for a file
-src/shader.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/shader.cpp.s
-.PHONY : src/shader.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -505,6 +559,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... install/strip
+	@echo ... src/Batch.obj
+	@echo ... src/Batch.i
+	@echo ... src/Batch.s
 	@echo ... src/DrawSystem.obj
 	@echo ... src/DrawSystem.i
 	@echo ... src/DrawSystem.s
@@ -523,6 +580,9 @@ help:
 	@echo ... src/Renderer.obj
 	@echo ... src/Renderer.i
 	@echo ... src/Renderer.s
+	@echo ... src/Shader.obj
+	@echo ... src/Shader.i
+	@echo ... src/Shader.s
 	@echo ... src/StateMainMenu.obj
 	@echo ... src/StateMainMenu.i
 	@echo ... src/StateMainMenu.s
@@ -535,12 +595,12 @@ help:
 	@echo ... src/game.obj
 	@echo ... src/game.i
 	@echo ... src/game.s
+	@echo ... src/loadShader.obj
+	@echo ... src/loadShader.i
+	@echo ... src/loadShader.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
-	@echo ... src/shader.obj
-	@echo ... src/shader.i
-	@echo ... src/shader.s
 .PHONY : help
 
 

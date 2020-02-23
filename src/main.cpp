@@ -6,7 +6,6 @@
 #include <string>
 
 // #include "CheckGLError.hpp"
-#include <shader.hpp>
 
 #include "game.hpp"
 #include "States/StateMainMenu.hpp"
@@ -49,27 +48,14 @@ int main()
 
         std::cout << "Renderer: " << glGetString(GL_RENDERER) << std::endl;
         std::cout << "OpenGL Version supported:  " << glGetString(GL_VERSION) << std::endl;
-
+        int tu = 0;
+        glGetIntegerv(GL_MAX_TEXTURE_IMAGE_UNITS, &tu);
+        std::cout << "Maximum Texture Units: " << tu << std::endl;
 
         // Dark blue background
         glClearColor(0.0f, 0.0f, 0.3f, 0.0f);
-        // // Enable depth test
-        // glEnable(GL_DEPTH_TEST);
-        // // Accept fragment if it closer to the camera than the former one
-        // glDepthFunc(GL_LESS);
-        // glfwSwapInterval(1);
 
 
-        GLuint VertexArrayID;
-        glGenVertexArrays(1, &VertexArrayID);
-        glBindVertexArray(VertexArrayID);
-
-
-
-
-
-        // Create and compile our GLSL program from the shaders
-        GLuint programID = LoadShaders( "../assets/shaders/basicvert.vshader", "../assets/shaders/basicfrag.fshader" );
         //
         // // Get a handle for our "MVP" uniform
         // GLuint MatrixID = glGetUniformLocation(programID, "MVP");
@@ -87,41 +73,6 @@ int main()
         // // Our ModelViewProjection : multiplication of our 3 matrices
         // glm::mat4 MVP        = Projection * View * Model;   // Remember, matrix multiplication is the other way around
         //
-
-
-
-        static const GLfloat g_vertex_buffer_data[] = {
-                -0.5f, -0.5f, 0.0f,
-                0.5f,  -0.5f, 0.0f,
-                0.5f,   0.5f, 0.0f,
-                -0.5f,  0.5f, 0.0f
-        };
-
-        unsigned int QuadIndices[] =
-        {
-                0, 1, 2,
-                2, 3, 0
-        };
-
-        // This will identify our vertex buffer
-        GLuint vertexbuffer;
-        // Generate 1 buffer, put the resulting identifier in vertexbuffer
-        glGenBuffers(1, &vertexbuffer);
-        // The following commands will talk about our 'vertexbuffer' buffer
-        glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
-        // Give our vertices to OpenGL.
-        glBufferData(GL_ARRAY_BUFFER, sizeof(g_vertex_buffer_data), g_vertex_buffer_data, GL_STATIC_DRAW);
-
-        unsigned int elementbuffer;
-        glGenBuffers(1, &elementbuffer);
-        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, elementbuffer);
-        glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(QuadIndices), QuadIndices, GL_STATIC_DRAW);
-
-
-        glBindVertexArray(0);
-        glBindBuffer(GL_ARRAY_BUFFER, 0);
-        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
-
 
         game = new Game();
         if (game->Init(window))

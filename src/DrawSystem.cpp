@@ -11,9 +11,15 @@
 #include "Locator.hpp"
 #include <iostream>
 
+struct Layers
+{
+        static const int main = 0;
+};
+
 bool sortinrev(const std::pair<int,int> &a,
                const std::pair<int,int> &b)
 {
+        //TODO: check if the entity is on the ground and loop through those first
         return (a.first > b.first);
 }
 void DrawSystem::update(entityx::EntityManager &es, entityx::EventManager &events, double dt)

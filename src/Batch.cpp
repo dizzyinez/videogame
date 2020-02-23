@@ -1,0 +1,154 @@
+#include "rendering/Batch.hpp"
+#include <GL/glew.h>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtx/transform.hpp>
+#include <glm/gtx/string_cast.hpp>
+#include <GLFW/glfw3.h>
+#include <iostream>
+
+void Batch::Init()
+{
+
+        MaxQuadCount = 5000;
+        MaxVertexCount = MaxQuadCount * 4;
+        MaxIndexCount = MaxQuadCount * 6;
+
+        if (QuadBuffer != nullptr)
+        {
+                std::cout << "Initialized a Batch multiple times!" << std::endl;
+                //TODO: assert or crash or whatever
+        }
+        QuadBuffer = new Vertex[MaxQuadCount];
+
+        glCreateVertexArrays(1, &QuadVA);
+        glBindVertexArray(QuadVA);
+
+        glCreateBuffers(1, &QuadVB);
+        glBindBuffer(GL_ARRAY_BUFFER, QuadVB);
+        glBufferData(GL_ARRAY_BUFFER, MaxVertexCount * sizeof(Vertex), nullptr, GL_DYNAMIC_DRAW);
+
+        glEnableVertexArrayAttrib(QuadVA, 0);
+        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (const void*)offsetof(Vertex, position));
+
+        glEnableVertexArrayAttrib(QuadVA, 1);
+        glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (const void*)offsetof(Vertex, texCoords));
+
+        uint32_t indices[MaxIndexCount];
+        uint32_t offset = 0;
+        for (int i = 0; i < MaxIndexCount; i += 6)
+        {
+                indices[i + 0] = 0 + offset;
+                indices[i + 1] = 1 + offset;
+                indices[i + 2] = 2 + offset;
+
+                indices[i + 3] = 2 + offset;
+                indices[i + 4] = 3 + offset;
+                indices[i + 5] = 0 + offset;
+
+                offset += 4;
+        }
+
+        glCreateBuffers(1, &QuadIB);
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, QuadIB);
+        glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
+        // shader.Load("../assets/shaders/basicvert.vshader", "../assets/shaders/basicfrag.fshader");
+
+        //create the 1x1 white texture
+
+}
+
+void Batch::BeginBatch()
+{
+        // QuadBufferIndex = 0;
+        QuadBufferPtr = QuadBuffer;
+}
+
+void Batch::EndBatch()
+{
+        GLsizeiptr size = (uint8_t*)QuadBufferPtr - (uint8_t*)QuadBuffer;
+        glBindBuffer(GL_ARRAY_BUFFER, QuadVB);
+        glBufferSubData(GL_ARRAY_BUFFER, 0, size, QuadBuffer);
+}
+
+void Batch::Flush()
+{
+        // for (uint32_t i = 0; i < TextureSlotIndex; i++)
+        // {
+        //         glBindTextureUnit(i, TextureSlots[i]);
+        // }
+        glBindVertexArray(QuadVA);
+        glDrawElements(GL_TRIANGLES, IndexCount, GL_UNSIGNED_INT, nullptr);
+
+        IndexCount = 0;
+        //TextureSlotIndex = 1;
+}
+
+void Batch::Clean()
+{
+        glDeleteVertexArrays(1, &QuadVA);
+        glDeleteBuffers(1, &QuadVB);
+        glDeleteBuffers(1, &QuadIB);
+
+        //delete white texture
+
+        delete[] QuadBuffer;
+}
+
+void Batch::DrawQuad(const glm::vec2& position, const glm::vec2& size)//, const glm::vec4& color)
+{
+        if (IndexCount >= MaxIndexCount)
+        {
+                std::cout << "Batch overflowed, beginning a new batch" << std::endl;
+                EndBatch();
+                Flush();
+                BeginBatch();
+        }
+
+        QuadBufferPtr->position = {position.x, position.y, 0.0f};
+        QuadBufferPtr->texCoords = {0.0f, 0.0f};
+        QuadBufferPtr++;
+
+        QuadBufferPtr->position = {position.x + size.x, position.y, 0.0f};
+        QuadBufferPtr->texCoords = {1.0f, 0.0f};
+        QuadBufferPtr++;
+
+        QuadBufferPtr->position = {position.x + size.x, position.y + size.y, 0.0f};
+        QuadBufferPtr->texCoords = {1.0f, 1.0f};
+        QuadBufferPtr++;
+
+        QuadBufferPtr->position = {position.x, position.y + size.y, 0.0f};
+        QuadBufferPtr->texCoords = {0.0f, 1.0f};
+        QuadBufferPtr++;
+
+        // QuadBuffer[QuadBufferIndex].position[0] = position.x;
+        // QuadBuffer[QuadBufferIndex].position[1] = position.y;
+        // QuadBuffer[QuadBufferIndex].position[2] = 0.0f;
+        // QuadBuffer[QuadBufferIndex].texCoords[0] = 0.0f;
+        // QuadBuffer[QuadBufferIndex].texCoords[1] = 0.0f;
+        // QuadBufferIndex++;
+        //
+        // QuadBuffer[QuadBufferIndex].position[0] = position.x + size.x;
+        // QuadBuffer[QuadBufferIndex].position[1] = position.y;
+        // QuadBuffer[QuadBufferIndex].position[2] = 0.0f;
+        // QuadBuffer[QuadBufferIndex].texCoords[0] = 1.0f;
+        // QuadBuffer[QuadBufferIndex].texCoords[1] = 0.0f;
+        // QuadBufferIndex++;
+        //
+        // QuadBuffer[QuadBufferIndex].position[0] = position.x + size.x;
+        // QuadBuffer[QuadBufferIndex].position[1] = position.y + size.y;
+        // QuadBuffer[QuadBufferIndex].position[2] = 0.0f;
+        // QuadBuffer[QuadBufferIndex].texCoords[0] = 1.0f;
+        // QuadBuffer[QuadBufferIndex].texCoords[1] = 1.0f;
+        // QuadBufferIndex++;
+        //
+        // QuadBuffer[QuadBufferIndex].position[0] = position.x;
+        // QuadBuffer[QuadBufferIndex].position[1] = position.y + size.y;
+        // QuadBuffer[QuadBufferIndex].position[2] = 0.0f;
+        // QuadBuffer[QuadBufferIndex].texCoords[0] = 0.0f;
+        // QuadBuffer[QuadBufferIndex].texCoords[1] = 1.0f;
+        // QuadBufferIndex++;
+
+        IndexCount += 6;
+
+}
