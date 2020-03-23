@@ -47,7 +47,7 @@ void DrawSystem::update(entityx::EntityManager &es, entityx::EventManager &event
                 for (pair = layer->begin(); pair != layer->end(); ++pair)
                 {
                         entityx::ComponentHandle<Transform> transform = pair->second.component<Transform>();
-                        Locator::getRenderer()->RenderQuad();
+                        Locator::getRenderer()->RenderQuad(transform->position, glm::vec2(100.0f, 100.0f));
                         // entityx::ComponentHandle<Texture> texture = pair->second.component<Texture>();
                         // if (texture)
                         // {

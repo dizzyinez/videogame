@@ -168,33 +168,6 @@ VideoGame/fast:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/build
 .PHONY : VideoGame/fast
 
-src/Batch.obj: src/Batch.cpp.obj
-
-.PHONY : src/Batch.obj
-
-# target to build an object file
-src/Batch.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Batch.cpp.obj
-.PHONY : src/Batch.cpp.obj
-
-src/Batch.i: src/Batch.cpp.i
-
-.PHONY : src/Batch.i
-
-# target to preprocess a source file
-src/Batch.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Batch.cpp.i
-.PHONY : src/Batch.cpp.i
-
-src/Batch.s: src/Batch.cpp.s
-
-.PHONY : src/Batch.s
-
-# target to generate assembly for a file
-src/Batch.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Batch.cpp.s
-.PHONY : src/Batch.cpp.s
-
 src/DrawSystem.obj: src/DrawSystem.cpp.obj
 
 .PHONY : src/DrawSystem.obj
@@ -275,6 +248,60 @@ src/Event.s: src/Event.cc.s
 src/Event.cc.s:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Event.cc.s
 .PHONY : src/Event.cc.s
+
+src/InputHandler.obj: src/InputHandler.cpp.obj
+
+.PHONY : src/InputHandler.obj
+
+# target to build an object file
+src/InputHandler.cpp.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/InputHandler.cpp.obj
+.PHONY : src/InputHandler.cpp.obj
+
+src/InputHandler.i: src/InputHandler.cpp.i
+
+.PHONY : src/InputHandler.i
+
+# target to preprocess a source file
+src/InputHandler.cpp.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/InputHandler.cpp.i
+.PHONY : src/InputHandler.cpp.i
+
+src/InputHandler.s: src/InputHandler.cpp.s
+
+.PHONY : src/InputHandler.s
+
+# target to generate assembly for a file
+src/InputHandler.cpp.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/InputHandler.cpp.s
+.PHONY : src/InputHandler.cpp.s
+
+src/InputSystem.obj: src/InputSystem.cpp.obj
+
+.PHONY : src/InputSystem.obj
+
+# target to build an object file
+src/InputSystem.cpp.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/InputSystem.cpp.obj
+.PHONY : src/InputSystem.cpp.obj
+
+src/InputSystem.i: src/InputSystem.cpp.i
+
+.PHONY : src/InputSystem.i
+
+# target to preprocess a source file
+src/InputSystem.cpp.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/InputSystem.cpp.i
+.PHONY : src/InputSystem.cpp.i
+
+src/InputSystem.s: src/InputSystem.cpp.s
+
+.PHONY : src/InputSystem.s
+
+# target to generate assembly for a file
+src/InputSystem.cpp.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/InputSystem.cpp.s
+.PHONY : src/InputSystem.cpp.s
 
 src/Locator.obj: src/Locator.cpp.obj
 
@@ -438,6 +465,33 @@ src/System.cc.s:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/System.cc.s
 .PHONY : src/System.cc.s
 
+src/TextureBatch.obj: src/TextureBatch.cpp.obj
+
+.PHONY : src/TextureBatch.obj
+
+# target to build an object file
+src/TextureBatch.cpp.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/TextureBatch.cpp.obj
+.PHONY : src/TextureBatch.cpp.obj
+
+src/TextureBatch.i: src/TextureBatch.cpp.i
+
+.PHONY : src/TextureBatch.i
+
+# target to preprocess a source file
+src/TextureBatch.cpp.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/TextureBatch.cpp.i
+.PHONY : src/TextureBatch.cpp.i
+
+src/TextureBatch.s: src/TextureBatch.cpp.s
+
+.PHONY : src/TextureBatch.s
+
+# target to generate assembly for a file
+src/TextureBatch.cpp.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/TextureBatch.cpp.s
+.PHONY : src/TextureBatch.cpp.s
+
 src/Timer.obj: src/Timer.cc.obj
 
 .PHONY : src/Timer.obj
@@ -559,9 +613,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... install/strip
-	@echo ... src/Batch.obj
-	@echo ... src/Batch.i
-	@echo ... src/Batch.s
 	@echo ... src/DrawSystem.obj
 	@echo ... src/DrawSystem.i
 	@echo ... src/DrawSystem.s
@@ -571,6 +622,12 @@ help:
 	@echo ... src/Event.obj
 	@echo ... src/Event.i
 	@echo ... src/Event.s
+	@echo ... src/InputHandler.obj
+	@echo ... src/InputHandler.i
+	@echo ... src/InputHandler.s
+	@echo ... src/InputSystem.obj
+	@echo ... src/InputSystem.i
+	@echo ... src/InputSystem.s
 	@echo ... src/Locator.obj
 	@echo ... src/Locator.i
 	@echo ... src/Locator.s
@@ -589,6 +646,9 @@ help:
 	@echo ... src/System.obj
 	@echo ... src/System.i
 	@echo ... src/System.s
+	@echo ... src/TextureBatch.obj
+	@echo ... src/TextureBatch.i
+	@echo ... src/TextureBatch.s
 	@echo ... src/Timer.obj
 	@echo ... src/Timer.i
 	@echo ... src/Timer.s

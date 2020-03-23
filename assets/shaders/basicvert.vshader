@@ -1,8 +1,9 @@
 #version 330 core
 
 // Input vertex data, different for all executions of this shader.
-layout(location = 0) in vec3 vertexPosition_modelspace;
-layout(location = 1) in vec2 texture_coordinate;
+layout(location = 0) in vec3 a_Position;
+layout(location = 1) in vec2 a_TexCoord;
+layout(location = 3) in float a_TexIndex;
 
 uniform mat4 ortho;
 
@@ -13,14 +14,16 @@ uniform mat4 ortho;
 // uniform mat4 MVP;
 
 // //Output data ; will be interpolated for each fragment.
-out vec2 Texture_coordinate;
+out vec2 v_TexCoord;
+out float v_TexIndex;
 
 void main(){
 
 	// Output position of the vertex, in clip space : MVP * position
-	gl_Position =  ortho * vec4(vertexPosition_modelspace,1);
+	gl_Position =  ortho * vec4(a_Position, 1.0);
 
       // The color of each vertex will be interpolated
       // to produce the color of each fragment
-			Texture_coordinate = texture_coordinate;
+			v_TexCoord = a_TexCoord;
+			v_TexIndex = a_TexIndex;
 }

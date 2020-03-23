@@ -3,7 +3,7 @@
 
 #include <glm/glm.hpp>
 #include "Shader.hpp"
-#include "rendering/Batch.hpp"
+#include "rendering/TextureBatch.hpp"
 
 class Renderer
 {
@@ -13,11 +13,12 @@ void Init();
 
 // void Render3DQuad
 
-void RenderQuad();
+void RenderQuad(const glm::vec2& position, const glm::vec2& size);
 void updateOrthoMatrix(int w, int h);
 private:
+uint32_t texture;
 
-Batch* batch;
+TextureBatch* textureBatch;
 
 
 glm::mat4 orthoMatrix;
@@ -27,7 +28,7 @@ unsigned int vertexarrayid;
 Shader basic_shader;
 unsigned int quad_position_buffer;
 unsigned int quad_element_buffer;
-unsigned int texture;
+// unsigned int texture;
 unsigned int texture_n;
 
 float QuadPositions[20] =

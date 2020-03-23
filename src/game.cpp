@@ -42,9 +42,9 @@ bool Game::Init(GLFWwindow* w)
         //         return false;
         // }
         //
-        Locator::Initialize();
         // Locator::provideRenderer(renderer);
-        // Locator::provideWindow(window);
+        Locator::provideWindow(window);
+        Locator::Initialize();
         // Locator::getTexureAllocator()->setWindowIcon("../assets/textures/test.png");
         return true;
 }
