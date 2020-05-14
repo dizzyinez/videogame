@@ -330,6 +330,33 @@ src/Locator.cpp.s:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Locator.cpp.s
 .PHONY : src/Locator.cpp.s
 
+src/MotionSystem.obj: src/MotionSystem.cpp.obj
+
+.PHONY : src/MotionSystem.obj
+
+# target to build an object file
+src/MotionSystem.cpp.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/MotionSystem.cpp.obj
+.PHONY : src/MotionSystem.cpp.obj
+
+src/MotionSystem.i: src/MotionSystem.cpp.i
+
+.PHONY : src/MotionSystem.i
+
+# target to preprocess a source file
+src/MotionSystem.cpp.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/MotionSystem.cpp.i
+.PHONY : src/MotionSystem.cpp.i
+
+src/MotionSystem.s: src/MotionSystem.cpp.s
+
+.PHONY : src/MotionSystem.s
+
+# target to generate assembly for a file
+src/MotionSystem.cpp.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/MotionSystem.cpp.s
+.PHONY : src/MotionSystem.cpp.s
+
 src/Pool.obj: src/Pool.cc.obj
 
 .PHONY : src/Pool.obj
@@ -631,6 +658,9 @@ help:
 	@echo ... src/Locator.obj
 	@echo ... src/Locator.i
 	@echo ... src/Locator.s
+	@echo ... src/MotionSystem.obj
+	@echo ... src/MotionSystem.i
+	@echo ... src/MotionSystem.s
 	@echo ... src/Pool.obj
 	@echo ... src/Pool.i
 	@echo ... src/Pool.s

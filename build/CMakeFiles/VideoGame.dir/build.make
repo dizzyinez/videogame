@@ -140,10 +140,24 @@ CMakeFiles/VideoGame.dir/src/Locator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VideoGame.dir/src/Locator.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S R:\Dev\games\game\src\Locator.cpp -o CMakeFiles\VideoGame.dir\src\Locator.cpp.s
 
+CMakeFiles/VideoGame.dir/src/MotionSystem.cpp.obj: CMakeFiles/VideoGame.dir/flags.make
+CMakeFiles/VideoGame.dir/src/MotionSystem.cpp.obj: CMakeFiles/VideoGame.dir/includes_CXX.rsp
+CMakeFiles/VideoGame.dir/src/MotionSystem.cpp.obj: ../src/MotionSystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/VideoGame.dir/src/MotionSystem.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\VideoGame.dir\src\MotionSystem.cpp.obj -c R:\Dev\games\game\src\MotionSystem.cpp
+
+CMakeFiles/VideoGame.dir/src/MotionSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VideoGame.dir/src/MotionSystem.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E R:\Dev\games\game\src\MotionSystem.cpp > CMakeFiles\VideoGame.dir\src\MotionSystem.cpp.i
+
+CMakeFiles/VideoGame.dir/src/MotionSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VideoGame.dir/src/MotionSystem.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S R:\Dev\games\game\src\MotionSystem.cpp -o CMakeFiles\VideoGame.dir\src\MotionSystem.cpp.s
+
 CMakeFiles/VideoGame.dir/src/Pool.cc.obj: CMakeFiles/VideoGame.dir/flags.make
 CMakeFiles/VideoGame.dir/src/Pool.cc.obj: CMakeFiles/VideoGame.dir/includes_CXX.rsp
 CMakeFiles/VideoGame.dir/src/Pool.cc.obj: ../src/Pool.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/VideoGame.dir/src/Pool.cc.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/VideoGame.dir/src/Pool.cc.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\VideoGame.dir\src\Pool.cc.obj -c R:\Dev\games\game\src\Pool.cc
 
 CMakeFiles/VideoGame.dir/src/Pool.cc.i: cmake_force
@@ -157,7 +171,7 @@ CMakeFiles/VideoGame.dir/src/Pool.cc.s: cmake_force
 CMakeFiles/VideoGame.dir/src/Renderer.cpp.obj: CMakeFiles/VideoGame.dir/flags.make
 CMakeFiles/VideoGame.dir/src/Renderer.cpp.obj: CMakeFiles/VideoGame.dir/includes_CXX.rsp
 CMakeFiles/VideoGame.dir/src/Renderer.cpp.obj: ../src/Renderer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/VideoGame.dir/src/Renderer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/VideoGame.dir/src/Renderer.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\VideoGame.dir\src\Renderer.cpp.obj -c R:\Dev\games\game\src\Renderer.cpp
 
 CMakeFiles/VideoGame.dir/src/Renderer.cpp.i: cmake_force
@@ -171,7 +185,7 @@ CMakeFiles/VideoGame.dir/src/Renderer.cpp.s: cmake_force
 CMakeFiles/VideoGame.dir/src/Shader.cpp.obj: CMakeFiles/VideoGame.dir/flags.make
 CMakeFiles/VideoGame.dir/src/Shader.cpp.obj: CMakeFiles/VideoGame.dir/includes_CXX.rsp
 CMakeFiles/VideoGame.dir/src/Shader.cpp.obj: ../src/Shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/VideoGame.dir/src/Shader.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/VideoGame.dir/src/Shader.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\VideoGame.dir\src\Shader.cpp.obj -c R:\Dev\games\game\src\Shader.cpp
 
 CMakeFiles/VideoGame.dir/src/Shader.cpp.i: cmake_force
@@ -185,7 +199,7 @@ CMakeFiles/VideoGame.dir/src/Shader.cpp.s: cmake_force
 CMakeFiles/VideoGame.dir/src/StateMainMenu.cpp.obj: CMakeFiles/VideoGame.dir/flags.make
 CMakeFiles/VideoGame.dir/src/StateMainMenu.cpp.obj: CMakeFiles/VideoGame.dir/includes_CXX.rsp
 CMakeFiles/VideoGame.dir/src/StateMainMenu.cpp.obj: ../src/StateMainMenu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/VideoGame.dir/src/StateMainMenu.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/VideoGame.dir/src/StateMainMenu.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\VideoGame.dir\src\StateMainMenu.cpp.obj -c R:\Dev\games\game\src\StateMainMenu.cpp
 
 CMakeFiles/VideoGame.dir/src/StateMainMenu.cpp.i: cmake_force
@@ -199,7 +213,7 @@ CMakeFiles/VideoGame.dir/src/StateMainMenu.cpp.s: cmake_force
 CMakeFiles/VideoGame.dir/src/System.cc.obj: CMakeFiles/VideoGame.dir/flags.make
 CMakeFiles/VideoGame.dir/src/System.cc.obj: CMakeFiles/VideoGame.dir/includes_CXX.rsp
 CMakeFiles/VideoGame.dir/src/System.cc.obj: ../src/System.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/VideoGame.dir/src/System.cc.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/VideoGame.dir/src/System.cc.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\VideoGame.dir\src\System.cc.obj -c R:\Dev\games\game\src\System.cc
 
 CMakeFiles/VideoGame.dir/src/System.cc.i: cmake_force
@@ -213,7 +227,7 @@ CMakeFiles/VideoGame.dir/src/System.cc.s: cmake_force
 CMakeFiles/VideoGame.dir/src/TextureBatch.cpp.obj: CMakeFiles/VideoGame.dir/flags.make
 CMakeFiles/VideoGame.dir/src/TextureBatch.cpp.obj: CMakeFiles/VideoGame.dir/includes_CXX.rsp
 CMakeFiles/VideoGame.dir/src/TextureBatch.cpp.obj: ../src/TextureBatch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/VideoGame.dir/src/TextureBatch.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/VideoGame.dir/src/TextureBatch.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\VideoGame.dir\src\TextureBatch.cpp.obj -c R:\Dev\games\game\src\TextureBatch.cpp
 
 CMakeFiles/VideoGame.dir/src/TextureBatch.cpp.i: cmake_force
@@ -227,7 +241,7 @@ CMakeFiles/VideoGame.dir/src/TextureBatch.cpp.s: cmake_force
 CMakeFiles/VideoGame.dir/src/Timer.cc.obj: CMakeFiles/VideoGame.dir/flags.make
 CMakeFiles/VideoGame.dir/src/Timer.cc.obj: CMakeFiles/VideoGame.dir/includes_CXX.rsp
 CMakeFiles/VideoGame.dir/src/Timer.cc.obj: ../src/Timer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/VideoGame.dir/src/Timer.cc.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/VideoGame.dir/src/Timer.cc.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\VideoGame.dir\src\Timer.cc.obj -c R:\Dev\games\game\src\Timer.cc
 
 CMakeFiles/VideoGame.dir/src/Timer.cc.i: cmake_force
@@ -241,7 +255,7 @@ CMakeFiles/VideoGame.dir/src/Timer.cc.s: cmake_force
 CMakeFiles/VideoGame.dir/src/game.cpp.obj: CMakeFiles/VideoGame.dir/flags.make
 CMakeFiles/VideoGame.dir/src/game.cpp.obj: CMakeFiles/VideoGame.dir/includes_CXX.rsp
 CMakeFiles/VideoGame.dir/src/game.cpp.obj: ../src/game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/VideoGame.dir/src/game.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/VideoGame.dir/src/game.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\VideoGame.dir\src\game.cpp.obj -c R:\Dev\games\game\src\game.cpp
 
 CMakeFiles/VideoGame.dir/src/game.cpp.i: cmake_force
@@ -255,7 +269,7 @@ CMakeFiles/VideoGame.dir/src/game.cpp.s: cmake_force
 CMakeFiles/VideoGame.dir/src/loadShader.cpp.obj: CMakeFiles/VideoGame.dir/flags.make
 CMakeFiles/VideoGame.dir/src/loadShader.cpp.obj: CMakeFiles/VideoGame.dir/includes_CXX.rsp
 CMakeFiles/VideoGame.dir/src/loadShader.cpp.obj: ../src/loadShader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/VideoGame.dir/src/loadShader.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/VideoGame.dir/src/loadShader.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\VideoGame.dir\src\loadShader.cpp.obj -c R:\Dev\games\game\src\loadShader.cpp
 
 CMakeFiles/VideoGame.dir/src/loadShader.cpp.i: cmake_force
@@ -269,7 +283,7 @@ CMakeFiles/VideoGame.dir/src/loadShader.cpp.s: cmake_force
 CMakeFiles/VideoGame.dir/src/main.cpp.obj: CMakeFiles/VideoGame.dir/flags.make
 CMakeFiles/VideoGame.dir/src/main.cpp.obj: CMakeFiles/VideoGame.dir/includes_CXX.rsp
 CMakeFiles/VideoGame.dir/src/main.cpp.obj: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/VideoGame.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/VideoGame.dir/src/main.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\VideoGame.dir\src\main.cpp.obj -c R:\Dev\games\game\src\main.cpp
 
 CMakeFiles/VideoGame.dir/src/main.cpp.i: cmake_force
@@ -288,6 +302,7 @@ VideoGame_OBJECTS = \
 "CMakeFiles/VideoGame.dir/src/InputHandler.cpp.obj" \
 "CMakeFiles/VideoGame.dir/src/InputSystem.cpp.obj" \
 "CMakeFiles/VideoGame.dir/src/Locator.cpp.obj" \
+"CMakeFiles/VideoGame.dir/src/MotionSystem.cpp.obj" \
 "CMakeFiles/VideoGame.dir/src/Pool.cc.obj" \
 "CMakeFiles/VideoGame.dir/src/Renderer.cpp.obj" \
 "CMakeFiles/VideoGame.dir/src/Shader.cpp.obj" \
@@ -308,6 +323,7 @@ VideoGame.exe: CMakeFiles/VideoGame.dir/src/Event.cc.obj
 VideoGame.exe: CMakeFiles/VideoGame.dir/src/InputHandler.cpp.obj
 VideoGame.exe: CMakeFiles/VideoGame.dir/src/InputSystem.cpp.obj
 VideoGame.exe: CMakeFiles/VideoGame.dir/src/Locator.cpp.obj
+VideoGame.exe: CMakeFiles/VideoGame.dir/src/MotionSystem.cpp.obj
 VideoGame.exe: CMakeFiles/VideoGame.dir/src/Pool.cc.obj
 VideoGame.exe: CMakeFiles/VideoGame.dir/src/Renderer.cpp.obj
 VideoGame.exe: CMakeFiles/VideoGame.dir/src/Shader.cpp.obj
@@ -326,7 +342,7 @@ VideoGame.exe: C:/Windows/System32/opengl32.dll
 VideoGame.exe: CMakeFiles/VideoGame.dir/linklibs.rsp
 VideoGame.exe: CMakeFiles/VideoGame.dir/objects1.rsp
 VideoGame.exe: CMakeFiles/VideoGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable VideoGame.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable VideoGame.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\VideoGame.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

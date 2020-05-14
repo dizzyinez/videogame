@@ -2,7 +2,6 @@
 #define Transform_hpp
 
 #include "entityx/entityx.h"
-#include "vec2.hpp"
 #include <glm/vec3.hpp>
 
 struct Transform : entityx::Component<Transform>

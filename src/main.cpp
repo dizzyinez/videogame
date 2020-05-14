@@ -15,8 +15,8 @@
 using namespace glm;
 
 
-const int UPDATE_RATE = 60;
-const int SECONDS_PER_UPDATE = 1 / UPDATE_RATE;
+const int UPDATE_RATE = 500;
+const float SECONDS_PER_UPDATE = 1.0f / (float)UPDATE_RATE;
 Game *game = nullptr;
 int main()
 {
@@ -54,6 +54,7 @@ int main()
 
         // Dark blue background
         glClearColor(0.0f, 0.3f, 0.6f, 0.0f);
+        glfwSwapInterval(0); //v-sync off
 
         game = new Game();
         if (game->Init(window))
@@ -66,14 +67,15 @@ int main()
                         glClear(GL_COLOR_BUFFER_BIT);
 
                         deltaTime = glfwGetTime();
-                        if (deltaTime > SECONDS_PER_UPDATE )
+                        if ( deltaTime > SECONDS_PER_UPDATE )
                         {
+                                // std::cout << deltaTime << " > " << SECONDS_PER_UPDATE << " FPS: " <<int(1.0f / deltaTime) << std::endl;
                                 glfwSetTime(0);
                                 game->HandleEvents();
                                 game->Update(deltaTime);
+                                game->Render(deltaTime);
+                                glfwSwapBuffers(window);
                         }
-                        game->Render(deltaTime);
-                        glfwSwapBuffers(window);
                         glfwPollEvents();
 
                 }

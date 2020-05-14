@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "R:/Dev/games/game/src/InputHandler.cpp" "R:/Dev/games/game/build/CMakeFiles/VideoGame.dir/src/InputHandler.cpp.obj"
   "R:/Dev/games/game/src/InputSystem.cpp" "R:/Dev/games/game/build/CMakeFiles/VideoGame.dir/src/InputSystem.cpp.obj"
   "R:/Dev/games/game/src/Locator.cpp" "R:/Dev/games/game/build/CMakeFiles/VideoGame.dir/src/Locator.cpp.obj"
+  "R:/Dev/games/game/src/MotionSystem.cpp" "R:/Dev/games/game/build/CMakeFiles/VideoGame.dir/src/MotionSystem.cpp.obj"
   "R:/Dev/games/game/src/Pool.cc" "R:/Dev/games/game/build/CMakeFiles/VideoGame.dir/src/Pool.cc.obj"
   "R:/Dev/games/game/src/Renderer.cpp" "R:/Dev/games/game/build/CMakeFiles/VideoGame.dir/src/Renderer.cpp.obj"
   "R:/Dev/games/game/src/Shader.cpp" "R:/Dev/games/game/build/CMakeFiles/VideoGame.dir/src/Shader.cpp.obj"

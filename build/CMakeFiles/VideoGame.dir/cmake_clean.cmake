@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/VideoGame.dir/src/InputHandler.cpp.obj"
   "CMakeFiles/VideoGame.dir/src/InputSystem.cpp.obj"
   "CMakeFiles/VideoGame.dir/src/Locator.cpp.obj"
+  "CMakeFiles/VideoGame.dir/src/MotionSystem.cpp.obj"
   "CMakeFiles/VideoGame.dir/src/Pool.cc.obj"
   "CMakeFiles/VideoGame.dir/src/Renderer.cpp.obj"
   "CMakeFiles/VideoGame.dir/src/Shader.cpp.obj"

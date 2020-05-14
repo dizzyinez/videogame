@@ -6,36 +6,34 @@
 
 struct Velocity : entityx::Component<Velocity>
 {
-        vec2f vel;
-        float verticalVel;
-        Velocity(float x = 0, float y = 0) : verticalVel(0) {
-                vel.x = x;
-                vel.y = y;
+        glm::vec3 velocity;
+        //TODO: vec4 rotation
+        Velocity(float x = 0, float y = 0) : velocity(x,y,0.0f){
         }
-        Velocity(vec2f v) : vel(v), verticalVel(0) {
-        }
-        Velocity(vec2f v, float vh = 0) : vel(v), verticalVel(vh) {
+        Velocity(glm::vec3 vel) : velocity(vel){
         }
 
         float getX()
         {
-                return vel.x;
+                return velocity.x;
         }
 
         float getY()
         {
-                return vel.y;
+                return velocity.y;
         }
 
         void setX(float x)
         {
-                vel.x = x;
+                velocity.x = x;
         }
 
         void setY(float y)
         {
-                vel.y = y;
+                velocity.y = y;
         }
+
+        //make add functions
 };
 
 

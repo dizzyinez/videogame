@@ -55,4 +55,8 @@ void DrawSystem::update(entityx::EntityManager &es, entityx::EventManager &event
                         // }
                 }
         }
+
+        //loop through gui components
+        //find hotbar entity
+        //for every item in the hotbar, draw the rectangle and the item
 }
