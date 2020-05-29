@@ -3,16 +3,23 @@
 
 #include "entityx/entityx.h"
 
+enum class Layer : int8_t
+{
+        sprite,
+        gui,
+        count //used to easily give the total amount of layers, should not be used as a layer otherwise the game will crash
+};
+
 struct Drawable : entityx::Component<Drawable>
 {
 public:
-        Drawable() : layer(0)
+        Drawable() : layer(Layer::sprite)
         {
         }
-        Drawable(int l) : layer(l)
+        Drawable(Layer l) : layer(l)
         {
         }
-        int layer; //use enums?
+        Layer layer;
 
 };
 

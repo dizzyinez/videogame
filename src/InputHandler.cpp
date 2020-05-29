@@ -14,7 +14,7 @@ std::vector<Input> inputs;
 
 void window_size_callback(GLFWwindow* window, int width, int height)
 {
-        Locator::getRenderer()->updateOrthoMatrix(width, height);
+        Locator::getRenderer()->updateMatricies(width, height);
 }
 
 void emplace_motion()

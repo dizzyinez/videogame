@@ -35,7 +35,7 @@ void Renderer::Init()
         int width, height, nrChannels;
         glGenTextures(1, &texture);
         glBindTexture(GL_TEXTURE_2D, texture);
-        unsigned char *data = stbi_load("../assets/textures/place_holder.png", &width, &height, &nrChannels, 0);
+        unsigned char *data = stbi_load("../assets/textures/place_holder_normals.png", &width, &height, &nrChannels, 0);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
@@ -44,35 +44,52 @@ void Renderer::Init()
         glBindTexture(GL_TEXTURE_2D, 0);
         stbi_image_free(data);
 
-        textureBatch = new TextureBatch();
-        textureBatch->Init();
-        updateOrthoMatrix(1024, 768);
+
+        spriteBatch = new TextureBatch();
+        spriteBatch->Init();
+        spriteBatch->BeginBatch();
+
+        updateMatricies(1024, 768);
 }
-void Renderer::RenderQuad(const glm::vec2& position, const glm::vec2& size)
+void Renderer::RenderSprite(const glm::vec2& position, const glm::vec2& size)
 {
         CheckGLError();
-        textureBatch->BeginBatch();
-        textureBatch->DrawQuad(position, size, texture);
-        textureBatch->EndBatch();
-
-        textureBatch->Flush();
+        spriteBatch->DrawQuad(position, size, texture);
 }
 
-
-void Renderer::updateOrthoMatrix(int w, int h)
+void Renderer::flushSpriteBatch()
+{
+        spriteBatch->EndBatch();
+        spriteBatch->Flush();
+        spriteBatch->BeginBatch();
+}
+void Renderer::updateMatricies(int w, int h)
 {
         float width = float(w);
         float height = float(h);
         float ar = width / height;
         float half_width = (1000 * ar) / 2;
         glm::mat4 view = glm::lookAt(glm::vec3(0,0,0), glm::vec3(0,0,-1), glm::vec3(0,1,0));
+
         glm::mat4 projection = glm::ortho(-half_width, half_width, -500.0f, 500.0f);
         glm::mat4 vp = projection * view;
-        textureBatch->SetViewMatrix(vp);
+        worldOrthoMatrix = vp;
+        spriteBatch->SetViewMatrix(vp);
         glViewport(0, 0, width, height);
-        // std::cout << orthoMatrix[0][0] << std::endl;
-        // orthoMatrix = glm::scale(glm::ortho(0.0f, float(w), 0.0f, float(h)), glm::vec3(scale, scale, scale));
 
-// y = 1000
-// dy=k/dx
+        projection = glm::ortho(0.0f, width, 0.0f, height); //reminder: this function only likes floats and will fail with integers
+        vp = projection * view;
+        screenOrthoMatrix = vp;
+
+
+}
+
+void Renderer::setProjectionWorld()
+{
+        spriteBatch->SetViewMatrix(worldOrthoMatrix);
+}
+
+void Renderer::setProjectionScreen()
+{
+        spriteBatch->SetViewMatrix(screenOrthoMatrix);
 }

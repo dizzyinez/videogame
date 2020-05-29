@@ -4,6 +4,7 @@
 #include "ResourceAllocator.hpp"
 #include "rendering/Renderer.hpp"
 #include "InputHandler.hpp"
+#include "rhea/simplex_solver.hpp"
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
@@ -36,10 +37,17 @@ static GLFWwindow* getWindow()
 {
         return window;
 }
+
+static rhea::simplex_solver* getGuiSolver()
+{
+        return &GUI_S;
+}
+
 private:
 static Renderer R;
 static InputHandler IH;
 static GLFWwindow* window;
+static rhea::simplex_solver GUI_S;
 // static TextureAllocator TA;
 };
 

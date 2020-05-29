@@ -8,7 +8,7 @@
 #include "components/Transform.hpp"
 #include "components/Velocity.hpp"
 
-float speed = 800.0f;
+float speed = 300.0f;
 
 void InputSystem::configure(entityx::EventManager &event_manager)
 {

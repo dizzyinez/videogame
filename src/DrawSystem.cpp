@@ -2,6 +2,7 @@
 
 #include "components/Drawable.hpp"
 #include "components/Transform.hpp"
+#include "components/Size.hpp"
 // #include "components/Texture.hpp"
 
 #include <GL/glew.h>
@@ -16,47 +17,65 @@ struct Layers
         static const int main = 0;
 };
 
-bool sortinrev(const std::pair<int,int> &a,
-               const std::pair<int,int> &b)
+bool sortbyheight(const std::pair<int,int> &a,
+                  const std::pair<int,int> &b)
 {
         //TODO: check if the entity is on the ground and loop through those first
-        return (a.first > b.first);
+        return (a.first < b.first);
 }
+
 void DrawSystem::update(entityx::EntityManager &es, entityx::EventManager &events, double dt)
 {
-        std::vector<std::vector<std::pair<int, entityx::Entity> > > v(1);
-        // v.push_back(new std::vector<std::pair<entityx::Entity, int> >);
-        // // TODO::push_back layers for each vector (maybe check if it's there yet??)
-        // es.each<Drawable>([](Entity entity, Drawable &drawable) {
-        // });
+        std::vector<std::vector<std::pair<int, entityx::Entity> > > v(static_cast<int8_t>(Layer::count));
         for (auto entity : es.entities_with_components<Drawable, Transform>())
         {
                 entityx::ComponentHandle<Drawable> drawable = entity.component<Drawable>();
                 entityx::ComponentHandle<Transform> transform = entity.component<Transform>();
                 if (drawable && transform) {
-                        //TODO: check for rotation and use rendercopyex for that
-                        v[drawable->layer].push_back(std::make_pair(transform->getY(), entity));//add height to pos
+                        //TODO: rotation
+                        v[static_cast<int8_t>(drawable->layer)].push_back(std::make_pair(transform->getY(), entity));   //add height to pos
                 }
         }
-        // sort(v[0].begin(), v[0].end(), sortinrev);
+
+        sort(v[static_cast<int8_t>(Layer::sprite)].begin(), v[static_cast<int8_t>(Layer::sprite)].end(), sortbyheight); //sort the sprites by their height on the screen
         std::vector<std::vector<std::pair<int, entityx::Entity> > >::iterator layer;
         std::vector<std::pair<int, entityx::Entity> >::iterator pair;
 
         for ( layer = v.begin(); layer != v.end(); ++layer)
         {
+
+                //set the correct view projection matrix for each layer
+                switch (std::distance(v.begin(), layer))
+                {
+                case static_cast<int8_t>(Layer::sprite):
+                        Locator::getRenderer()->setProjectionWorld();
+                        break;
+                case static_cast<int8_t>(Layer::gui):
+                        Locator::getRenderer()->setProjectionScreen();
+                        break;
+                }
+
+
                 for (pair = layer->begin(); pair != layer->end(); ++pair)
                 {
                         entityx::ComponentHandle<Transform> transform = pair->second.component<Transform>();
-                        Locator::getRenderer()->RenderQuad(transform->position, glm::vec2(100.0f, 100.0f));
+                        entityx::ComponentHandle<Size> size = pair->second.component<Size>();
+                        if (size)
+                        {
+                                // std::cout << "rendering " << std::endl;
+                                Locator::getRenderer()->RenderSprite(transform->position, size->size); //maybe? have a seperate position component which is a vec2 in order to save a tiny bit of memory
+                        }
+                        else
+                        {
+                                Locator::getRenderer()->RenderSprite(transform->position, glm::vec2(200.0f, 200.0f)); //draws the object with a default size
+                        }
                         // entityx::ComponentHandle<Texture> texture = pair->second.component<Texture>();
                         // if (texture)
                         // {
                         //
                         // }
                 }
+                Locator::getRenderer()->flushSpriteBatch();
         }
 
-        //loop through gui components
-        //find hotbar entity
-        //for every item in the hotbar, draw the rectangle and the item
 }

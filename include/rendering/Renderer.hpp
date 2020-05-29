@@ -13,15 +13,20 @@ void Init();
 
 // void Render3DQuad
 
-void RenderQuad(const glm::vec2& position, const glm::vec2& size);
-void updateOrthoMatrix(int w, int h);
+void RenderSprite(const glm::vec2& position, const glm::vec2& size);
+void flushSpriteBatch();
+void updateMatricies(int w, int h);
+
+void setProjectionWorld();
+void setProjectionScreen();
 private:
 uint32_t texture;
 
-TextureBatch* textureBatch;
+TextureBatch* spriteBatch;
 
 
-glm::mat4 orthoMatrix;
+glm::mat4 worldOrthoMatrix;
+glm::mat4 screenOrthoMatrix;
 unsigned int orthoMatrixID;
 
 unsigned int vertexarrayid;

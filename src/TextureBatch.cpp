@@ -122,7 +122,7 @@ void TextureBatch::Init()
 }
 
 
-void TextureBatch::DrawQuad(const glm::vec2& position, const glm::vec2& size)
+void TextureBatch::DrawQuad(const glm::vec2& position, const glm::vec2& size) // add colored quad
 {
         if (IndexCount >= MaxIndexCount)
         {

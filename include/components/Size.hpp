@@ -1,15 +1,14 @@
 #ifndef Size_hpp
 #define Size_hpp
 #include "entityx/entityx.h"
-#include <glm/vec3.hpp>
+#include <glm/vec2.hpp>
 
 struct Size : entityx::Component<Size>
 {
-        //add a scale value?
-        glm::vec3 size;
-        Transform(float x = 0, float y = 0) : size(x,y,0.0f){
+        glm::vec2 size;
+        Size(float x = 0, float y = 0) : size(x,y){
         }
-        Transform(glm::vec3 pos) : size(pos){
+        Size(glm::vec2 s) : size(s){
         }
 
         float getX()
@@ -22,14 +21,14 @@ struct Size : entityx::Component<Size>
                 return size.y;
         }
 
-        void setX(float x)
+        void setW(float w)
         {
-                size.x = x;
+                size.x = w;
         }
 
-        void setY(float y)
+        void setH(float h)
         {
-                size.y = y;
+                size.y = h;
         }
 
         //make add functions
