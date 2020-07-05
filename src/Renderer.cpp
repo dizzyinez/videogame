@@ -77,11 +77,9 @@ void Renderer::updateMatricies(int w, int h)
         spriteBatch->SetViewMatrix(vp);
         glViewport(0, 0, width, height);
 
-        projection = glm::ortho(0.0f, width, 0.0f, height); //reminder: this function only likes floats and will fail with integers
+        projection = glm::ortho(0.0f, width, 0.0f, height); //reminder: this function only likes floats and seems to fail with integers
         vp = projection * view;
         screenOrthoMatrix = vp;
-
-
 }
 
 void Renderer::setProjectionWorld()

@@ -249,6 +249,33 @@ src/Event.cc.s:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Event.cc.s
 .PHONY : src/Event.cc.s
 
+src/G_MainMenu.obj: src/G_MainMenu.cpp.obj
+
+.PHONY : src/G_MainMenu.obj
+
+# target to build an object file
+src/G_MainMenu.cpp.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/G_MainMenu.cpp.obj
+.PHONY : src/G_MainMenu.cpp.obj
+
+src/G_MainMenu.i: src/G_MainMenu.cpp.i
+
+.PHONY : src/G_MainMenu.i
+
+# target to preprocess a source file
+src/G_MainMenu.cpp.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/G_MainMenu.cpp.i
+.PHONY : src/G_MainMenu.cpp.i
+
+src/G_MainMenu.s: src/G_MainMenu.cpp.s
+
+.PHONY : src/G_MainMenu.s
+
+# target to generate assembly for a file
+src/G_MainMenu.cpp.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/G_MainMenu.cpp.s
+.PHONY : src/G_MainMenu.cpp.s
+
 src/GuiSystem.obj: src/GuiSystem.cpp.obj
 
 .PHONY : src/GuiSystem.obj
@@ -811,6 +838,9 @@ help:
 	@echo ... src/Event.obj
 	@echo ... src/Event.i
 	@echo ... src/Event.s
+	@echo ... src/G_MainMenu.obj
+	@echo ... src/G_MainMenu.i
+	@echo ... src/G_MainMenu.s
 	@echo ... src/GuiSystem.obj
 	@echo ... src/GuiSystem.i
 	@echo ... src/GuiSystem.s

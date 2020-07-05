@@ -20,22 +20,20 @@
 
 #include "rhea/simplex_solver.hpp"
 
+#include "gui/G_MainMenu.hpp"
+
 void StateMainMenu::init()
 {
-        systems.add<InputSystem>();
-        systems.add<MotionSystem>();
-        systems.add<GuiSystem>();
-        systems.add<DrawSystem>();
-        systems.configure();
+        systems->add<InputSystem>();
+        systems->add<MotionSystem>();
+        systems->add<GuiSystem>();
+        systems->add<GS_MainMenu>();
+        systems->add<DrawSystem>();
+        systems->configure();
         // configure(this->events);
         //
-        entityx::Entity box = entities.create();
-        box.assign<Transform>(0.0f, 0.0f);
-        box.assign<Size>(100.0f, 100.0f);
-        box.assign<Velocity>(0.0f,0.0f);
-        box.assign<Drawable>();
-        box.assign<GUIElement>();
-        entityx::Entity gamer = entities.create();
+
+        entityx::Entity gamer = entities->create();
         gamer.assign<Transform>(-50.0f, -50.0f);
         gamer.assign<Velocity>(0.0f,0.0f);
         gamer.assign<Player>();
@@ -43,13 +41,12 @@ void StateMainMenu::init()
         // gamer.assign<Input_Velocity>(6);
         // gamer.assign<Texture>("../assets/textures/temp_player.png ");
 
-
-        Locator::getGuiSolver()->add_constraints({
-                box.component<GUIElement>()->x == 40,
-                box.component<GUIElement>()->y == box.component<GUIElement>()->x * 2,
-                box.component<GUIElement>()->w == 100,
-                box.component<GUIElement>()->h == box.component<GUIElement>()->w
-        });
+        entityx::Entity box = entities->create();
+        box.assign<Transform>(0.0f, 0.0f);
+        box.assign<Size>(100.0f, 100.0f);
+        box.assign<Drawable>();
+        box.assign<GUIElement>();
+        box.assign<GC_MainMenu>();
 }
 void StateMainMenu::handleEvents()
 {
@@ -58,13 +55,13 @@ void StateMainMenu::handleEvents()
 void StateMainMenu::update(float deltaTime)
 {
 
-        systems.update<InputSystem>(deltaTime);
-        systems.update<GuiSystem>(deltaTime);
-        systems.update<MotionSystem>(deltaTime);
+        systems->update<InputSystem>(deltaTime);
+        systems->update<GuiSystem>(deltaTime);
+        systems->update<MotionSystem>(deltaTime);
 }
 void StateMainMenu::render(float deltaTime)
 {
-        systems.update<DrawSystem>(deltaTime);
+        systems->update<DrawSystem>(deltaTime);
 }
 void StateMainMenu::clean()
 {

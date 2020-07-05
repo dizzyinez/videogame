@@ -20,32 +20,12 @@ Game::~Game()
 bool Game::Init(GLFWwindow* w)
 {
         window = w;
-        // if (SDL_Init(SDL_INIT_EVERYTHING) == 0)
-        // {
-        //         SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
-        //         std::cout << "SDL initialized " << std::endl;
-        //
-        //         int flags = SDL_WINDOW_RESIZABLE;
-        //
-        //         window = SDL_CreateWindow("td ", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1080, 720, flags);
-        //         renderer = SDL_CreateRenderer(window, -1, 0);
-        //         if (renderer)
-        //         {
-        //                 SDL_SetRenderDrawColor(renderer, 1, 144, 144, 255);
         running = true;
-        //         }
-        // }
-        // else
-        // {
-        //         std::cout << "SDL could not initialize: " << std::endl;
-        //         running = false;
-        //         return false;
-        // }
-        //
         // Locator::provideRenderer(renderer);
         Locator::provideWindow(window);
         Locator::Initialize();
         // Locator::getTexureAllocator()->setWindowIcon("../assets/textures/test.png");
+        Locator::provideGame(this);
         return true;
 }
 
@@ -100,6 +80,7 @@ void Game::Clean ()
 void Game::pushState(State* state)
 {
         states.push(state);
+        state->provideECS(&this->events, &this->entities, &this->systems);
         state->init();
 }
 

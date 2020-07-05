@@ -15,6 +15,7 @@
 
 #include "rhea/simplex_solver.hpp"
 
+//TODO: add LUA integration
 void GuiSystem::update(entityx::EntityManager &es, entityx::EventManager &events, double dt)
 {
         for (auto entity : es.entities_with_components<GUIElement, Size, Transform>())
@@ -23,6 +24,30 @@ void GuiSystem::update(entityx::EntityManager &es, entityx::EventManager &events
                 entityx::ComponentHandle<Size> size = entity.component<Size>();
                 entityx::ComponentHandle<Transform> transform = entity.component<Transform>();
                 entityx::ComponentHandle<Drawable> drawable = entity.component<Drawable>();
+
+                // if (gui)
+                // {
+                //         if (gui->guistate != nullptr)
+                //         {
+                //                 // std::cout << gui->guistate->guicomponent << std::endl;
+                //                 if (gui->guistate->guicomponent == 0)
+                //                 {
+                //                         gui->guistate->guicomponent = gui;
+                //                         gui->guistate->initialize(&es);
+                //                         gui->guistate->calculateChildPositions(windowSize.x, windowSize.y);
+                //                         for (auto g : gui->guistate->children)
+                //                         {
+                //                                 if (g->guistate != nullptr)
+                //                                 {
+                //                                         g->guistate->guicomponent = gui;
+                //                                         g->guistate->initialize(&es);
+                //                                 }
+                //                         }
+                //                 }
+                //                 // gui->guistate->initialize(&es);
+                //         }
+                // }
+
                 if (gui && size && transform) {
                         transform->setX(gui->x.value());
                         transform->setY(gui->y.value());
@@ -31,12 +56,9 @@ void GuiSystem::update(entityx::EntityManager &es, entityx::EventManager &events
                 }
                 if (drawable)
                 {
-                        drawable->layer = Layer::gui; //maybe one isn't the best choice for the gui layer
+                        drawable->layer = Layer::gui;
                 }
         }
-        //loop through gui components
-        //find hotbar entity
-        //for every item in the hotbar, draw the rectangle and the item
 
         rhea::simplex_solver solver;
         rhea::variable left, middle, right;
@@ -52,4 +74,19 @@ void GuiSystem::update(entityx::EntityManager &es, entityx::EventManager &events
         // delete &left;
         // std::cout << middle.value() << " " << right.value() << std::endl;
 
+}
+
+void GuiSystem::receive(const WindowResize &windowResize)
+{
+        // for (auto entity : Locator::getGame()->entities.entities_with_components<GUIElement, Size>()) //size might soon be redundant since I might make a size component mandatory for the guielement, but maybe there's some wierd exception I can't think of? IDK.
+        // {
+        //         entityx::ComponentHandle<GUIElement> gui = entity.component<GUIElement>();
+        //         entityx::ComponentHandle<Size> size = entity.component<Size>();
+        //
+        //         if (gui && gui->guistate != nullptr)
+        //         {
+        //                 gui->guistate->calculateChildPositions(windowResize.x, windowResize.y);
+        //
+        //         }
+        // }
 }

@@ -27,13 +27,13 @@ int main()
                 return 1;
         }
 
-        glfwWindowHint(GLFW_SAMPLES, 4); // 4x antialiasing
+        glfwWindowHint(GLFW_SAMPLES, 1); // 0x antialiasing
         glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
         glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
         glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // To make MacOS happy; should not be needed
         glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE); // We don't want the old OpenGL
 
-        GLFWwindow* window = glfwCreateWindow( 1024, 768, "VideoGame", NULL, NULL);
+        GLFWwindow* window = glfwCreateWindow(1024, 768, "VideoGame", NULL, NULL);
         if( !window ) {
                 std::cout << "Failed to open GLFW window." << std::endl;
                 glfwTerminate();

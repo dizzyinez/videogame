@@ -21,7 +21,7 @@ bool sortbyheight(const std::pair<int,int> &a,
                   const std::pair<int,int> &b)
 {
         //TODO: check if the entity is on the ground and loop through those first
-        return (a.first < b.first);
+        return (a.first > b.first);
 }
 
 void DrawSystem::update(entityx::EntityManager &es, entityx::EventManager &events, double dt)
@@ -43,7 +43,6 @@ void DrawSystem::update(entityx::EntityManager &es, entityx::EventManager &event
 
         for ( layer = v.begin(); layer != v.end(); ++layer)
         {
-
                 //set the correct view projection matrix for each layer
                 switch (std::distance(v.begin(), layer))
                 {
@@ -54,7 +53,6 @@ void DrawSystem::update(entityx::EntityManager &es, entityx::EventManager &event
                         Locator::getRenderer()->setProjectionScreen();
                         break;
                 }
-
 
                 for (pair = layer->begin(); pair != layer->end(); ++pair)
                 {

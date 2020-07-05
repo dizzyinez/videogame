@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/VideoGame.dir/src/DrawSystem.cpp.obj"
   "CMakeFiles/VideoGame.dir/src/Entity.cc.obj"
   "CMakeFiles/VideoGame.dir/src/Event.cc.obj"
+  "CMakeFiles/VideoGame.dir/src/G_MainMenu.cpp.obj"
   "CMakeFiles/VideoGame.dir/src/GuiSystem.cpp.obj"
   "CMakeFiles/VideoGame.dir/src/InputHandler.cpp.obj"
   "CMakeFiles/VideoGame.dir/src/InputSystem.cpp.obj"

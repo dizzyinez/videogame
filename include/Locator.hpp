@@ -4,7 +4,7 @@
 #include "ResourceAllocator.hpp"
 #include "rendering/Renderer.hpp"
 #include "InputHandler.hpp"
-#include "rhea/simplex_solver.hpp"
+#include "game.hpp"
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
@@ -17,10 +17,16 @@ static void Initialize() {
         R.Init();
         IH.Init();
 }
+
 static void provideWindow(GLFWwindow* w)
 {
         window = w;
         IH.provideWindow(w);
+}
+
+static void provideGame(Game* g)
+{
+        game = g;
 }
 
 static Renderer* getRenderer()
@@ -38,16 +44,15 @@ static GLFWwindow* getWindow()
         return window;
 }
 
-static rhea::simplex_solver* getGuiSolver()
+static Game* getGame()
 {
-        return &GUI_S;
+        return game;
 }
-
 private:
 static Renderer R;
 static InputHandler IH;
 static GLFWwindow* window;
-static rhea::simplex_solver GUI_S;
+static Game* game;
 // static TextureAllocator TA;
 };
 

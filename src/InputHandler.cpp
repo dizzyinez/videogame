@@ -1,6 +1,7 @@
 #include "InputHandler.hpp"
 #include "events/ActionEvent.hpp"
 #include "Locator.hpp"
+#include "events/WindowResize.hpp"
 
 /*
    TODO:
@@ -14,14 +15,15 @@ std::vector<Input> inputs;
 
 void window_size_callback(GLFWwindow* window, int width, int height)
 {
-        Locator::getRenderer()->updateMatricies(width, height);
+        Locator::getGame()->events.emit<WindowResize>(width, height);
+        Locator::getRenderer()->updateMatricies(width, height); //TODO: have the draw system handle this off of the
 }
 
 void emplace_motion()
 {
         glm::vec2 direction = glm::vec2(
-                (Pressed_Left || Pressed_Right) ? (H_Recent_Press_Right ? 1 : -1) : 0.0f,
-                (Pressed_Up   || Pressed_Down ) ? (V_Recent_Press_Up ? 1 : -1) : 0.0f
+                (Pressed_Left || Pressed_Right) ? (H_Recent_Press_Right ? 1.0f : -1.0f) : 0.0f,
+                (Pressed_Up   || Pressed_Down ) ? (V_Recent_Press_Up ? 1.0f : -1.0f) : 0.0f
                 );
         if (direction != glm::vec2(0.0f,0.0f))
         {
@@ -82,8 +84,6 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
                         break;
                 }
         }
-
-
 }
 
 

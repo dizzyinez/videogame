@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "R:/Dev/games/game/src/DrawSystem.cpp" "R:/Dev/games/game/build/CMakeFiles/VideoGame.dir/src/DrawSystem.cpp.obj"
   "R:/Dev/games/game/src/Entity.cc" "R:/Dev/games/game/build/CMakeFiles/VideoGame.dir/src/Entity.cc.obj"
   "R:/Dev/games/game/src/Event.cc" "R:/Dev/games/game/build/CMakeFiles/VideoGame.dir/src/Event.cc.obj"
+  "R:/Dev/games/game/src/G_MainMenu.cpp" "R:/Dev/games/game/build/CMakeFiles/VideoGame.dir/src/G_MainMenu.cpp.obj"
   "R:/Dev/games/game/src/GuiSystem.cpp" "R:/Dev/games/game/build/CMakeFiles/VideoGame.dir/src/GuiSystem.cpp.obj"
   "R:/Dev/games/game/src/InputHandler.cpp" "R:/Dev/games/game/build/CMakeFiles/VideoGame.dir/src/InputHandler.cpp.obj"
   "R:/Dev/games/game/src/InputSystem.cpp" "R:/Dev/games/game/build/CMakeFiles/VideoGame.dir/src/InputSystem.cpp.obj"
