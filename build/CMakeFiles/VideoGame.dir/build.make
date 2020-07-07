@@ -622,7 +622,11 @@ CMakeFiles/VideoGame.dir/src/main.cpp.obj: CMakeFiles/VideoGame.dir/flags.make
 CMakeFiles/VideoGame.dir/src/main.cpp.obj: CMakeFiles/VideoGame.dir/includes_CXX.rsp
 CMakeFiles/VideoGame.dir/src/main.cpp.obj: ../src/main.cpp
 <<<<<<< HEAD
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/VideoGame.dir/src/main.cpp.obj"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/VideoGame.dir/src/main.cpp.obj"
+>>>>>>> parent of 6926ef8... last commit before changing from entityx to flecs
 =======
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/VideoGame.dir/src/main.cpp.obj"
 >>>>>>> parent of 6926ef8... last commit before changing from entityx to flecs
@@ -863,7 +867,11 @@ VideoGame.exe: CMakeFiles/VideoGame.dir/linklibs.rsp
 VideoGame.exe: CMakeFiles/VideoGame.dir/objects1.rsp
 VideoGame.exe: CMakeFiles/VideoGame.dir/link.txt
 <<<<<<< HEAD
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable VideoGame.exe"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable VideoGame.exe"
+>>>>>>> parent of 6926ef8... last commit before changing from entityx to flecs
 =======
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=R:\Dev\games\game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable VideoGame.exe"
 >>>>>>> parent of 6926ef8... last commit before changing from entityx to flecs

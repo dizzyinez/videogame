@@ -223,6 +223,7 @@ CMakeFiles/VideoGame.dir/src/flecs/dbg.c.obj: ../src/flecs/flecs_private.h
 CMakeFiles/VideoGame.dir/src/flecs/dbg.c.obj: ../src/flecs/types.h
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 CMakeFiles/VideoGame.dir/src/flecs/entity.c.obj: ../include/flecs/flecs.h
 CMakeFiles/VideoGame.dir/src/flecs/entity.c.obj: ../include/flecs/flecs/bake_config.h
 CMakeFiles/VideoGame.dir/src/flecs/entity.c.obj: ../include/flecs/flecs/util/dbg.h
@@ -258,6 +259,8 @@ CMakeFiles/VideoGame.dir/src/flecs/misc.c.obj: ../src/flecs/flecs_private.h
 CMakeFiles/VideoGame.dir/src/flecs/misc.c.obj: ../src/flecs/misc.c
 CMakeFiles/VideoGame.dir/src/flecs/misc.c.obj: ../src/flecs/types.h
 =======
+=======
+>>>>>>> parent of 6926ef8... last commit before changing from entityx to flecs
 CMakeFiles/VideoGame.dir/src/GuiSystem.cpp.obj: ../include/Input.hpp
 CMakeFiles/VideoGame.dir/src/GuiSystem.cpp.obj: ../include/InputHandler.hpp
 CMakeFiles/VideoGame.dir/src/GuiSystem.cpp.obj: ../include/Locator.hpp

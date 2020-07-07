@@ -250,6 +250,7 @@ src/flecs/dbg.c.s:
 .PHONY : src/flecs/dbg.c.s
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 src/flecs/entity.obj: src/flecs/entity.c.obj
 
 .PHONY : src/flecs/entity.obj
@@ -279,6 +280,8 @@ src/flecs/entity.c.s:
 
 src/flecs/err.obj: src/flecs/err.c.obj
 =======
+=======
+>>>>>>> parent of 6926ef8... last commit before changing from entityx to flecs
 src/GuiSystem.obj: src/GuiSystem.cpp.obj
 >>>>>>> parent of 6926ef8... last commit before changing from entityx to flecs
 

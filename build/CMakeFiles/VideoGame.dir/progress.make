@@ -23,10 +23,13 @@ CMAKE_PROGRESS_22 = 22
 CMAKE_PROGRESS_23 = 23
 CMAKE_PROGRESS_24 = 24
 <<<<<<< HEAD
+<<<<<<< HEAD
 CMAKE_PROGRESS_25 = 25
 CMAKE_PROGRESS_26 = 26
 CMAKE_PROGRESS_27 = 27
 CMAKE_PROGRESS_28 = 28
+=======
+>>>>>>> parent of 6926ef8... last commit before changing from entityx to flecs
 =======
 >>>>>>> parent of 6926ef8... last commit before changing from entityx to flecs
 
