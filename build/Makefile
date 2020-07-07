@@ -249,6 +249,7 @@ src/flecs/dbg.c.s:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/dbg.c.s
 .PHONY : src/flecs/dbg.c.s
 
+<<<<<<< HEAD
 src/flecs/entity.obj: src/flecs/entity.c.obj
 
 .PHONY : src/flecs/entity.obj
@@ -277,6 +278,9 @@ src/flecs/entity.c.s:
 .PHONY : src/flecs/entity.c.s
 
 src/flecs/err.obj: src/flecs/err.c.obj
+=======
+src/GuiSystem.obj: src/GuiSystem.cpp.obj
+>>>>>>> parent of 6926ef8... last commit before changing from entityx to flecs
 
 .PHONY : src/flecs/err.obj
 
@@ -910,6 +914,7 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... install/strip
+<<<<<<< HEAD
 	@echo ... src/flecs/chunked.obj
 	@echo ... src/flecs/chunked.i
 	@echo ... src/flecs/chunked.s
@@ -973,6 +978,65 @@ help:
 	@echo ... src/flecs/writer.obj
 	@echo ... src/flecs/writer.i
 	@echo ... src/flecs/writer.s
+=======
+	@echo ... src/DrawSystem.obj
+	@echo ... src/DrawSystem.i
+	@echo ... src/DrawSystem.s
+	@echo ... src/Entity.obj
+	@echo ... src/Entity.i
+	@echo ... src/Entity.s
+	@echo ... src/Event.obj
+	@echo ... src/Event.i
+	@echo ... src/Event.s
+	@echo ... src/GuiSystem.obj
+	@echo ... src/GuiSystem.i
+	@echo ... src/GuiSystem.s
+	@echo ... src/InputHandler.obj
+	@echo ... src/InputHandler.i
+	@echo ... src/InputHandler.s
+	@echo ... src/InputSystem.obj
+	@echo ... src/InputSystem.i
+	@echo ... src/InputSystem.s
+	@echo ... src/Locator.obj
+	@echo ... src/Locator.i
+	@echo ... src/Locator.s
+	@echo ... src/MotionSystem.obj
+	@echo ... src/MotionSystem.i
+	@echo ... src/MotionSystem.s
+	@echo ... src/Pool.obj
+	@echo ... src/Pool.i
+	@echo ... src/Pool.s
+	@echo ... src/Renderer.obj
+	@echo ... src/Renderer.i
+	@echo ... src/Renderer.s
+	@echo ... src/Shader.obj
+	@echo ... src/Shader.i
+	@echo ... src/Shader.s
+	@echo ... src/StateMainMenu.obj
+	@echo ... src/StateMainMenu.i
+	@echo ... src/StateMainMenu.s
+	@echo ... src/System.obj
+	@echo ... src/System.i
+	@echo ... src/System.s
+	@echo ... src/TextureBatch.obj
+	@echo ... src/TextureBatch.i
+	@echo ... src/TextureBatch.s
+	@echo ... src/Timer.obj
+	@echo ... src/Timer.i
+	@echo ... src/Timer.s
+	@echo ... src/abstract_variable.obj
+	@echo ... src/abstract_variable.i
+	@echo ... src/abstract_variable.s
+	@echo ... src/game.obj
+	@echo ... src/game.i
+	@echo ... src/game.s
+	@echo ... src/linear_expression.obj
+	@echo ... src/linear_expression.i
+	@echo ... src/linear_expression.s
+	@echo ... src/loadShader.obj
+	@echo ... src/loadShader.i
+	@echo ... src/loadShader.s
+>>>>>>> parent of 6926ef8... last commit before changing from entityx to flecs
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

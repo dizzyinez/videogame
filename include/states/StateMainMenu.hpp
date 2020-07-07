@@ -2,8 +2,9 @@
 #define StateMainMenu_hpp
 
 #include "state.hpp"
+#include "entityx/entityx.h"
 
-class StateMainMenu : public State
+class StateMainMenu : public State, public entityx::EntityX
 {
 public:
 void init();

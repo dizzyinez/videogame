@@ -7,12 +7,11 @@
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-
-#include "entityx/entityx.h"
+//#include "state.h"
 
 class State;
 
-class Game : public entityx::EntityX {
+class Game {
 public:
 bool running;
 

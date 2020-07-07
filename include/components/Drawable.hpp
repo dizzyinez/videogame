@@ -3,7 +3,7 @@
 
 #include "entityx/entityx.h"
 
-enum class Layer : uint8_t
+enum class Layer : int8_t
 {
         sprite,
         gui,
