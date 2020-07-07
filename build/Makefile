@@ -168,545 +168,572 @@ VideoGame/fast:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/build
 .PHONY : VideoGame/fast
 
-src/DrawSystem.obj: src/DrawSystem.cpp.obj
+src/flecs/chunked.obj: src/flecs/chunked.c.obj
 
-.PHONY : src/DrawSystem.obj
-
-# target to build an object file
-src/DrawSystem.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/DrawSystem.cpp.obj
-.PHONY : src/DrawSystem.cpp.obj
-
-src/DrawSystem.i: src/DrawSystem.cpp.i
-
-.PHONY : src/DrawSystem.i
-
-# target to preprocess a source file
-src/DrawSystem.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/DrawSystem.cpp.i
-.PHONY : src/DrawSystem.cpp.i
-
-src/DrawSystem.s: src/DrawSystem.cpp.s
-
-.PHONY : src/DrawSystem.s
-
-# target to generate assembly for a file
-src/DrawSystem.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/DrawSystem.cpp.s
-.PHONY : src/DrawSystem.cpp.s
-
-src/Entity.obj: src/Entity.cc.obj
-
-.PHONY : src/Entity.obj
+.PHONY : src/flecs/chunked.obj
 
 # target to build an object file
-src/Entity.cc.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Entity.cc.obj
-.PHONY : src/Entity.cc.obj
+src/flecs/chunked.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/chunked.c.obj
+.PHONY : src/flecs/chunked.c.obj
 
-src/Entity.i: src/Entity.cc.i
+src/flecs/chunked.i: src/flecs/chunked.c.i
 
-.PHONY : src/Entity.i
+.PHONY : src/flecs/chunked.i
 
 # target to preprocess a source file
-src/Entity.cc.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Entity.cc.i
-.PHONY : src/Entity.cc.i
+src/flecs/chunked.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/chunked.c.i
+.PHONY : src/flecs/chunked.c.i
 
-src/Entity.s: src/Entity.cc.s
+src/flecs/chunked.s: src/flecs/chunked.c.s
 
-.PHONY : src/Entity.s
+.PHONY : src/flecs/chunked.s
 
 # target to generate assembly for a file
-src/Entity.cc.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Entity.cc.s
-.PHONY : src/Entity.cc.s
+src/flecs/chunked.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/chunked.c.s
+.PHONY : src/flecs/chunked.c.s
 
-src/Event.obj: src/Event.cc.obj
+src/flecs/column_system.obj: src/flecs/column_system.c.obj
 
-.PHONY : src/Event.obj
+.PHONY : src/flecs/column_system.obj
 
 # target to build an object file
-src/Event.cc.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Event.cc.obj
-.PHONY : src/Event.cc.obj
+src/flecs/column_system.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/column_system.c.obj
+.PHONY : src/flecs/column_system.c.obj
 
-src/Event.i: src/Event.cc.i
+src/flecs/column_system.i: src/flecs/column_system.c.i
 
-.PHONY : src/Event.i
+.PHONY : src/flecs/column_system.i
 
 # target to preprocess a source file
-src/Event.cc.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Event.cc.i
-.PHONY : src/Event.cc.i
+src/flecs/column_system.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/column_system.c.i
+.PHONY : src/flecs/column_system.c.i
 
-src/Event.s: src/Event.cc.s
+src/flecs/column_system.s: src/flecs/column_system.c.s
 
-.PHONY : src/Event.s
+.PHONY : src/flecs/column_system.s
 
 # target to generate assembly for a file
-src/Event.cc.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Event.cc.s
-.PHONY : src/Event.cc.s
+src/flecs/column_system.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/column_system.c.s
+.PHONY : src/flecs/column_system.c.s
 
-src/G_MainMenu.obj: src/G_MainMenu.cpp.obj
+src/flecs/dbg.obj: src/flecs/dbg.c.obj
 
-.PHONY : src/G_MainMenu.obj
+.PHONY : src/flecs/dbg.obj
 
 # target to build an object file
-src/G_MainMenu.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/G_MainMenu.cpp.obj
-.PHONY : src/G_MainMenu.cpp.obj
+src/flecs/dbg.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/dbg.c.obj
+.PHONY : src/flecs/dbg.c.obj
 
-src/G_MainMenu.i: src/G_MainMenu.cpp.i
+src/flecs/dbg.i: src/flecs/dbg.c.i
 
-.PHONY : src/G_MainMenu.i
+.PHONY : src/flecs/dbg.i
 
 # target to preprocess a source file
-src/G_MainMenu.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/G_MainMenu.cpp.i
-.PHONY : src/G_MainMenu.cpp.i
+src/flecs/dbg.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/dbg.c.i
+.PHONY : src/flecs/dbg.c.i
 
-src/G_MainMenu.s: src/G_MainMenu.cpp.s
+src/flecs/dbg.s: src/flecs/dbg.c.s
 
-.PHONY : src/G_MainMenu.s
+.PHONY : src/flecs/dbg.s
 
 # target to generate assembly for a file
-src/G_MainMenu.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/G_MainMenu.cpp.s
-.PHONY : src/G_MainMenu.cpp.s
+src/flecs/dbg.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/dbg.c.s
+.PHONY : src/flecs/dbg.c.s
 
-src/GuiSystem.obj: src/GuiSystem.cpp.obj
+src/flecs/entity.obj: src/flecs/entity.c.obj
 
-.PHONY : src/GuiSystem.obj
+.PHONY : src/flecs/entity.obj
 
 # target to build an object file
-src/GuiSystem.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/GuiSystem.cpp.obj
-.PHONY : src/GuiSystem.cpp.obj
+src/flecs/entity.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/entity.c.obj
+.PHONY : src/flecs/entity.c.obj
 
-src/GuiSystem.i: src/GuiSystem.cpp.i
+src/flecs/entity.i: src/flecs/entity.c.i
 
-.PHONY : src/GuiSystem.i
+.PHONY : src/flecs/entity.i
 
 # target to preprocess a source file
-src/GuiSystem.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/GuiSystem.cpp.i
-.PHONY : src/GuiSystem.cpp.i
+src/flecs/entity.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/entity.c.i
+.PHONY : src/flecs/entity.c.i
 
-src/GuiSystem.s: src/GuiSystem.cpp.s
+src/flecs/entity.s: src/flecs/entity.c.s
 
-.PHONY : src/GuiSystem.s
+.PHONY : src/flecs/entity.s
 
 # target to generate assembly for a file
-src/GuiSystem.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/GuiSystem.cpp.s
-.PHONY : src/GuiSystem.cpp.s
+src/flecs/entity.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/entity.c.s
+.PHONY : src/flecs/entity.c.s
 
-src/InputHandler.obj: src/InputHandler.cpp.obj
+src/flecs/err.obj: src/flecs/err.c.obj
 
-.PHONY : src/InputHandler.obj
+.PHONY : src/flecs/err.obj
 
 # target to build an object file
-src/InputHandler.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/InputHandler.cpp.obj
-.PHONY : src/InputHandler.cpp.obj
+src/flecs/err.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/err.c.obj
+.PHONY : src/flecs/err.c.obj
 
-src/InputHandler.i: src/InputHandler.cpp.i
+src/flecs/err.i: src/flecs/err.c.i
 
-.PHONY : src/InputHandler.i
+.PHONY : src/flecs/err.i
 
 # target to preprocess a source file
-src/InputHandler.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/InputHandler.cpp.i
-.PHONY : src/InputHandler.cpp.i
+src/flecs/err.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/err.c.i
+.PHONY : src/flecs/err.c.i
 
-src/InputHandler.s: src/InputHandler.cpp.s
+src/flecs/err.s: src/flecs/err.c.s
 
-.PHONY : src/InputHandler.s
+.PHONY : src/flecs/err.s
 
 # target to generate assembly for a file
-src/InputHandler.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/InputHandler.cpp.s
-.PHONY : src/InputHandler.cpp.s
+src/flecs/err.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/err.c.s
+.PHONY : src/flecs/err.c.s
 
-src/InputSystem.obj: src/InputSystem.cpp.obj
+src/flecs/filter.obj: src/flecs/filter.c.obj
 
-.PHONY : src/InputSystem.obj
+.PHONY : src/flecs/filter.obj
 
 # target to build an object file
-src/InputSystem.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/InputSystem.cpp.obj
-.PHONY : src/InputSystem.cpp.obj
+src/flecs/filter.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/filter.c.obj
+.PHONY : src/flecs/filter.c.obj
 
-src/InputSystem.i: src/InputSystem.cpp.i
+src/flecs/filter.i: src/flecs/filter.c.i
 
-.PHONY : src/InputSystem.i
+.PHONY : src/flecs/filter.i
 
 # target to preprocess a source file
-src/InputSystem.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/InputSystem.cpp.i
-.PHONY : src/InputSystem.cpp.i
+src/flecs/filter.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/filter.c.i
+.PHONY : src/flecs/filter.c.i
 
-src/InputSystem.s: src/InputSystem.cpp.s
+src/flecs/filter.s: src/flecs/filter.c.s
 
-.PHONY : src/InputSystem.s
+.PHONY : src/flecs/filter.s
 
 # target to generate assembly for a file
-src/InputSystem.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/InputSystem.cpp.s
-.PHONY : src/InputSystem.cpp.s
+src/flecs/filter.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/filter.c.s
+.PHONY : src/flecs/filter.c.s
 
-src/Locator.obj: src/Locator.cpp.obj
+src/flecs/map.obj: src/flecs/map.c.obj
 
-.PHONY : src/Locator.obj
+.PHONY : src/flecs/map.obj
 
 # target to build an object file
-src/Locator.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Locator.cpp.obj
-.PHONY : src/Locator.cpp.obj
+src/flecs/map.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/map.c.obj
+.PHONY : src/flecs/map.c.obj
 
-src/Locator.i: src/Locator.cpp.i
+src/flecs/map.i: src/flecs/map.c.i
 
-.PHONY : src/Locator.i
+.PHONY : src/flecs/map.i
 
 # target to preprocess a source file
-src/Locator.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Locator.cpp.i
-.PHONY : src/Locator.cpp.i
+src/flecs/map.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/map.c.i
+.PHONY : src/flecs/map.c.i
 
-src/Locator.s: src/Locator.cpp.s
+src/flecs/map.s: src/flecs/map.c.s
 
-.PHONY : src/Locator.s
+.PHONY : src/flecs/map.s
 
 # target to generate assembly for a file
-src/Locator.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Locator.cpp.s
-.PHONY : src/Locator.cpp.s
+src/flecs/map.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/map.c.s
+.PHONY : src/flecs/map.c.s
 
-src/MotionSystem.obj: src/MotionSystem.cpp.obj
+src/flecs/misc.obj: src/flecs/misc.c.obj
 
-.PHONY : src/MotionSystem.obj
+.PHONY : src/flecs/misc.obj
 
 # target to build an object file
-src/MotionSystem.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/MotionSystem.cpp.obj
-.PHONY : src/MotionSystem.cpp.obj
+src/flecs/misc.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/misc.c.obj
+.PHONY : src/flecs/misc.c.obj
 
-src/MotionSystem.i: src/MotionSystem.cpp.i
+src/flecs/misc.i: src/flecs/misc.c.i
 
-.PHONY : src/MotionSystem.i
+.PHONY : src/flecs/misc.i
 
 # target to preprocess a source file
-src/MotionSystem.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/MotionSystem.cpp.i
-.PHONY : src/MotionSystem.cpp.i
+src/flecs/misc.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/misc.c.i
+.PHONY : src/flecs/misc.c.i
 
-src/MotionSystem.s: src/MotionSystem.cpp.s
+src/flecs/misc.s: src/flecs/misc.c.s
 
-.PHONY : src/MotionSystem.s
+.PHONY : src/flecs/misc.s
 
 # target to generate assembly for a file
-src/MotionSystem.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/MotionSystem.cpp.s
-.PHONY : src/MotionSystem.cpp.s
+src/flecs/misc.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/misc.c.s
+.PHONY : src/flecs/misc.c.s
 
-src/Pool.obj: src/Pool.cc.obj
+src/flecs/os_api.obj: src/flecs/os_api.c.obj
 
-.PHONY : src/Pool.obj
+.PHONY : src/flecs/os_api.obj
 
 # target to build an object file
-src/Pool.cc.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Pool.cc.obj
-.PHONY : src/Pool.cc.obj
+src/flecs/os_api.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/os_api.c.obj
+.PHONY : src/flecs/os_api.c.obj
 
-src/Pool.i: src/Pool.cc.i
+src/flecs/os_api.i: src/flecs/os_api.c.i
 
-.PHONY : src/Pool.i
+.PHONY : src/flecs/os_api.i
 
 # target to preprocess a source file
-src/Pool.cc.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Pool.cc.i
-.PHONY : src/Pool.cc.i
+src/flecs/os_api.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/os_api.c.i
+.PHONY : src/flecs/os_api.c.i
 
-src/Pool.s: src/Pool.cc.s
+src/flecs/os_api.s: src/flecs/os_api.c.s
 
-.PHONY : src/Pool.s
+.PHONY : src/flecs/os_api.s
 
 # target to generate assembly for a file
-src/Pool.cc.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Pool.cc.s
-.PHONY : src/Pool.cc.s
+src/flecs/os_api.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/os_api.c.s
+.PHONY : src/flecs/os_api.c.s
 
-src/Renderer.obj: src/Renderer.cpp.obj
+src/flecs/parser.obj: src/flecs/parser.c.obj
 
-.PHONY : src/Renderer.obj
+.PHONY : src/flecs/parser.obj
 
 # target to build an object file
-src/Renderer.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Renderer.cpp.obj
-.PHONY : src/Renderer.cpp.obj
+src/flecs/parser.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/parser.c.obj
+.PHONY : src/flecs/parser.c.obj
 
-src/Renderer.i: src/Renderer.cpp.i
+src/flecs/parser.i: src/flecs/parser.c.i
 
-.PHONY : src/Renderer.i
+.PHONY : src/flecs/parser.i
 
 # target to preprocess a source file
-src/Renderer.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Renderer.cpp.i
-.PHONY : src/Renderer.cpp.i
+src/flecs/parser.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/parser.c.i
+.PHONY : src/flecs/parser.c.i
 
-src/Renderer.s: src/Renderer.cpp.s
+src/flecs/parser.s: src/flecs/parser.c.s
 
-.PHONY : src/Renderer.s
+.PHONY : src/flecs/parser.s
 
 # target to generate assembly for a file
-src/Renderer.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Renderer.cpp.s
-.PHONY : src/Renderer.cpp.s
+src/flecs/parser.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/parser.c.s
+.PHONY : src/flecs/parser.c.s
 
-src/Shader.obj: src/Shader.cpp.obj
+src/flecs/reader.obj: src/flecs/reader.c.obj
 
-.PHONY : src/Shader.obj
+.PHONY : src/flecs/reader.obj
 
 # target to build an object file
-src/Shader.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Shader.cpp.obj
-.PHONY : src/Shader.cpp.obj
+src/flecs/reader.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/reader.c.obj
+.PHONY : src/flecs/reader.c.obj
 
-src/Shader.i: src/Shader.cpp.i
+src/flecs/reader.i: src/flecs/reader.c.i
 
-.PHONY : src/Shader.i
+.PHONY : src/flecs/reader.i
 
 # target to preprocess a source file
-src/Shader.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Shader.cpp.i
-.PHONY : src/Shader.cpp.i
+src/flecs/reader.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/reader.c.i
+.PHONY : src/flecs/reader.c.i
 
-src/Shader.s: src/Shader.cpp.s
+src/flecs/reader.s: src/flecs/reader.c.s
 
-.PHONY : src/Shader.s
+.PHONY : src/flecs/reader.s
 
 # target to generate assembly for a file
-src/Shader.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Shader.cpp.s
-.PHONY : src/Shader.cpp.s
+src/flecs/reader.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/reader.c.s
+.PHONY : src/flecs/reader.c.s
 
-src/StateMainMenu.obj: src/StateMainMenu.cpp.obj
+src/flecs/snapshot.obj: src/flecs/snapshot.c.obj
 
-.PHONY : src/StateMainMenu.obj
+.PHONY : src/flecs/snapshot.obj
 
 # target to build an object file
-src/StateMainMenu.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/StateMainMenu.cpp.obj
-.PHONY : src/StateMainMenu.cpp.obj
+src/flecs/snapshot.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/snapshot.c.obj
+.PHONY : src/flecs/snapshot.c.obj
 
-src/StateMainMenu.i: src/StateMainMenu.cpp.i
+src/flecs/snapshot.i: src/flecs/snapshot.c.i
 
-.PHONY : src/StateMainMenu.i
+.PHONY : src/flecs/snapshot.i
 
 # target to preprocess a source file
-src/StateMainMenu.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/StateMainMenu.cpp.i
-.PHONY : src/StateMainMenu.cpp.i
+src/flecs/snapshot.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/snapshot.c.i
+.PHONY : src/flecs/snapshot.c.i
 
-src/StateMainMenu.s: src/StateMainMenu.cpp.s
+src/flecs/snapshot.s: src/flecs/snapshot.c.s
 
-.PHONY : src/StateMainMenu.s
+.PHONY : src/flecs/snapshot.s
 
 # target to generate assembly for a file
-src/StateMainMenu.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/StateMainMenu.cpp.s
-.PHONY : src/StateMainMenu.cpp.s
+src/flecs/snapshot.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/snapshot.c.s
+.PHONY : src/flecs/snapshot.c.s
 
-src/System.obj: src/System.cc.obj
+src/flecs/stage.obj: src/flecs/stage.c.obj
 
-.PHONY : src/System.obj
+.PHONY : src/flecs/stage.obj
 
 # target to build an object file
-src/System.cc.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/System.cc.obj
-.PHONY : src/System.cc.obj
+src/flecs/stage.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/stage.c.obj
+.PHONY : src/flecs/stage.c.obj
 
-src/System.i: src/System.cc.i
+src/flecs/stage.i: src/flecs/stage.c.i
 
-.PHONY : src/System.i
+.PHONY : src/flecs/stage.i
 
 # target to preprocess a source file
-src/System.cc.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/System.cc.i
-.PHONY : src/System.cc.i
+src/flecs/stage.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/stage.c.i
+.PHONY : src/flecs/stage.c.i
 
-src/System.s: src/System.cc.s
+src/flecs/stage.s: src/flecs/stage.c.s
 
-.PHONY : src/System.s
+.PHONY : src/flecs/stage.s
 
 # target to generate assembly for a file
-src/System.cc.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/System.cc.s
-.PHONY : src/System.cc.s
+src/flecs/stage.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/stage.c.s
+.PHONY : src/flecs/stage.c.s
 
-src/TextureBatch.obj: src/TextureBatch.cpp.obj
+src/flecs/stats.obj: src/flecs/stats.c.obj
 
-.PHONY : src/TextureBatch.obj
+.PHONY : src/flecs/stats.obj
 
 # target to build an object file
-src/TextureBatch.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/TextureBatch.cpp.obj
-.PHONY : src/TextureBatch.cpp.obj
+src/flecs/stats.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/stats.c.obj
+.PHONY : src/flecs/stats.c.obj
 
-src/TextureBatch.i: src/TextureBatch.cpp.i
+src/flecs/stats.i: src/flecs/stats.c.i
 
-.PHONY : src/TextureBatch.i
+.PHONY : src/flecs/stats.i
 
 # target to preprocess a source file
-src/TextureBatch.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/TextureBatch.cpp.i
-.PHONY : src/TextureBatch.cpp.i
+src/flecs/stats.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/stats.c.i
+.PHONY : src/flecs/stats.c.i
 
-src/TextureBatch.s: src/TextureBatch.cpp.s
+src/flecs/stats.s: src/flecs/stats.c.s
 
-.PHONY : src/TextureBatch.s
+.PHONY : src/flecs/stats.s
 
 # target to generate assembly for a file
-src/TextureBatch.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/TextureBatch.cpp.s
-.PHONY : src/TextureBatch.cpp.s
+src/flecs/stats.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/stats.c.s
+.PHONY : src/flecs/stats.c.s
 
-src/Timer.obj: src/Timer.cc.obj
+src/flecs/system.obj: src/flecs/system.c.obj
 
-.PHONY : src/Timer.obj
+.PHONY : src/flecs/system.obj
 
 # target to build an object file
-src/Timer.cc.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Timer.cc.obj
-.PHONY : src/Timer.cc.obj
+src/flecs/system.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/system.c.obj
+.PHONY : src/flecs/system.c.obj
 
-src/Timer.i: src/Timer.cc.i
+src/flecs/system.i: src/flecs/system.c.i
 
-.PHONY : src/Timer.i
+.PHONY : src/flecs/system.i
 
 # target to preprocess a source file
-src/Timer.cc.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Timer.cc.i
-.PHONY : src/Timer.cc.i
+src/flecs/system.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/system.c.i
+.PHONY : src/flecs/system.c.i
 
-src/Timer.s: src/Timer.cc.s
+src/flecs/system.s: src/flecs/system.c.s
 
-.PHONY : src/Timer.s
+.PHONY : src/flecs/system.s
 
 # target to generate assembly for a file
-src/Timer.cc.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/Timer.cc.s
-.PHONY : src/Timer.cc.s
+src/flecs/system.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/system.c.s
+.PHONY : src/flecs/system.c.s
 
-src/abstract_variable.obj: src/abstract_variable.cpp.obj
+src/flecs/table.obj: src/flecs/table.c.obj
 
-.PHONY : src/abstract_variable.obj
+.PHONY : src/flecs/table.obj
 
 # target to build an object file
-src/abstract_variable.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/abstract_variable.cpp.obj
-.PHONY : src/abstract_variable.cpp.obj
+src/flecs/table.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/table.c.obj
+.PHONY : src/flecs/table.c.obj
 
-src/abstract_variable.i: src/abstract_variable.cpp.i
+src/flecs/table.i: src/flecs/table.c.i
 
-.PHONY : src/abstract_variable.i
+.PHONY : src/flecs/table.i
 
 # target to preprocess a source file
-src/abstract_variable.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/abstract_variable.cpp.i
-.PHONY : src/abstract_variable.cpp.i
+src/flecs/table.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/table.c.i
+.PHONY : src/flecs/table.c.i
 
-src/abstract_variable.s: src/abstract_variable.cpp.s
+src/flecs/table.s: src/flecs/table.c.s
 
-.PHONY : src/abstract_variable.s
+.PHONY : src/flecs/table.s
 
 # target to generate assembly for a file
-src/abstract_variable.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/abstract_variable.cpp.s
-.PHONY : src/abstract_variable.cpp.s
+src/flecs/table.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/table.c.s
+.PHONY : src/flecs/table.c.s
 
-src/game.obj: src/game.cpp.obj
+src/flecs/type.obj: src/flecs/type.c.obj
 
-.PHONY : src/game.obj
+.PHONY : src/flecs/type.obj
 
 # target to build an object file
-src/game.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/game.cpp.obj
-.PHONY : src/game.cpp.obj
+src/flecs/type.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/type.c.obj
+.PHONY : src/flecs/type.c.obj
 
-src/game.i: src/game.cpp.i
+src/flecs/type.i: src/flecs/type.c.i
 
-.PHONY : src/game.i
+.PHONY : src/flecs/type.i
 
 # target to preprocess a source file
-src/game.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/game.cpp.i
-.PHONY : src/game.cpp.i
+src/flecs/type.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/type.c.i
+.PHONY : src/flecs/type.c.i
 
-src/game.s: src/game.cpp.s
+src/flecs/type.s: src/flecs/type.c.s
 
-.PHONY : src/game.s
+.PHONY : src/flecs/type.s
 
 # target to generate assembly for a file
-src/game.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/game.cpp.s
-.PHONY : src/game.cpp.s
+src/flecs/type.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/type.c.s
+.PHONY : src/flecs/type.c.s
 
-src/linear_expression.obj: src/linear_expression.cpp.obj
+src/flecs/vector.obj: src/flecs/vector.c.obj
 
-.PHONY : src/linear_expression.obj
+.PHONY : src/flecs/vector.obj
 
 # target to build an object file
-src/linear_expression.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/linear_expression.cpp.obj
-.PHONY : src/linear_expression.cpp.obj
+src/flecs/vector.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/vector.c.obj
+.PHONY : src/flecs/vector.c.obj
 
-src/linear_expression.i: src/linear_expression.cpp.i
+src/flecs/vector.i: src/flecs/vector.c.i
 
-.PHONY : src/linear_expression.i
+.PHONY : src/flecs/vector.i
 
 # target to preprocess a source file
-src/linear_expression.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/linear_expression.cpp.i
-.PHONY : src/linear_expression.cpp.i
+src/flecs/vector.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/vector.c.i
+.PHONY : src/flecs/vector.c.i
 
-src/linear_expression.s: src/linear_expression.cpp.s
+src/flecs/vector.s: src/flecs/vector.c.s
 
-.PHONY : src/linear_expression.s
+.PHONY : src/flecs/vector.s
 
 # target to generate assembly for a file
-src/linear_expression.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/linear_expression.cpp.s
-.PHONY : src/linear_expression.cpp.s
+src/flecs/vector.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/vector.c.s
+.PHONY : src/flecs/vector.c.s
 
-src/loadShader.obj: src/loadShader.cpp.obj
+src/flecs/worker.obj: src/flecs/worker.c.obj
 
-.PHONY : src/loadShader.obj
+.PHONY : src/flecs/worker.obj
 
 # target to build an object file
-src/loadShader.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/loadShader.cpp.obj
-.PHONY : src/loadShader.cpp.obj
+src/flecs/worker.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/worker.c.obj
+.PHONY : src/flecs/worker.c.obj
 
-src/loadShader.i: src/loadShader.cpp.i
+src/flecs/worker.i: src/flecs/worker.c.i
 
-.PHONY : src/loadShader.i
+.PHONY : src/flecs/worker.i
 
 # target to preprocess a source file
-src/loadShader.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/loadShader.cpp.i
-.PHONY : src/loadShader.cpp.i
+src/flecs/worker.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/worker.c.i
+.PHONY : src/flecs/worker.c.i
 
-src/loadShader.s: src/loadShader.cpp.s
+src/flecs/worker.s: src/flecs/worker.c.s
 
-.PHONY : src/loadShader.s
+.PHONY : src/flecs/worker.s
 
 # target to generate assembly for a file
-src/loadShader.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/loadShader.cpp.s
-.PHONY : src/loadShader.cpp.s
+src/flecs/worker.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/worker.c.s
+.PHONY : src/flecs/worker.c.s
+
+src/flecs/world.obj: src/flecs/world.c.obj
+
+.PHONY : src/flecs/world.obj
+
+# target to build an object file
+src/flecs/world.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/world.c.obj
+.PHONY : src/flecs/world.c.obj
+
+src/flecs/world.i: src/flecs/world.c.i
+
+.PHONY : src/flecs/world.i
+
+# target to preprocess a source file
+src/flecs/world.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/world.c.i
+.PHONY : src/flecs/world.c.i
+
+src/flecs/world.s: src/flecs/world.c.s
+
+.PHONY : src/flecs/world.s
+
+# target to generate assembly for a file
+src/flecs/world.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/world.c.s
+.PHONY : src/flecs/world.c.s
+
+src/flecs/writer.obj: src/flecs/writer.c.obj
+
+.PHONY : src/flecs/writer.obj
+
+# target to build an object file
+src/flecs/writer.c.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/writer.c.obj
+.PHONY : src/flecs/writer.c.obj
+
+src/flecs/writer.i: src/flecs/writer.c.i
+
+.PHONY : src/flecs/writer.i
+
+# target to preprocess a source file
+src/flecs/writer.c.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/writer.c.i
+.PHONY : src/flecs/writer.c.i
+
+src/flecs/writer.s: src/flecs/writer.c.s
+
+.PHONY : src/flecs/writer.s
+
+# target to generate assembly for a file
+src/flecs/writer.c.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/flecs/writer.c.s
+.PHONY : src/flecs/writer.c.s
 
 src/main.obj: src/main.cpp.obj
 
@@ -735,86 +762,140 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/simplex_solver.obj: src/simplex_solver.cpp.obj
+src/rhea/abstract_variable.obj: src/rhea/abstract_variable.cpp.obj
 
-.PHONY : src/simplex_solver.obj
-
-# target to build an object file
-src/simplex_solver.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/simplex_solver.cpp.obj
-.PHONY : src/simplex_solver.cpp.obj
-
-src/simplex_solver.i: src/simplex_solver.cpp.i
-
-.PHONY : src/simplex_solver.i
-
-# target to preprocess a source file
-src/simplex_solver.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/simplex_solver.cpp.i
-.PHONY : src/simplex_solver.cpp.i
-
-src/simplex_solver.s: src/simplex_solver.cpp.s
-
-.PHONY : src/simplex_solver.s
-
-# target to generate assembly for a file
-src/simplex_solver.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/simplex_solver.cpp.s
-.PHONY : src/simplex_solver.cpp.s
-
-src/symbolic_weight.obj: src/symbolic_weight.cpp.obj
-
-.PHONY : src/symbolic_weight.obj
+.PHONY : src/rhea/abstract_variable.obj
 
 # target to build an object file
-src/symbolic_weight.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/symbolic_weight.cpp.obj
-.PHONY : src/symbolic_weight.cpp.obj
+src/rhea/abstract_variable.cpp.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/rhea/abstract_variable.cpp.obj
+.PHONY : src/rhea/abstract_variable.cpp.obj
 
-src/symbolic_weight.i: src/symbolic_weight.cpp.i
+src/rhea/abstract_variable.i: src/rhea/abstract_variable.cpp.i
 
-.PHONY : src/symbolic_weight.i
+.PHONY : src/rhea/abstract_variable.i
 
 # target to preprocess a source file
-src/symbolic_weight.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/symbolic_weight.cpp.i
-.PHONY : src/symbolic_weight.cpp.i
+src/rhea/abstract_variable.cpp.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/rhea/abstract_variable.cpp.i
+.PHONY : src/rhea/abstract_variable.cpp.i
 
-src/symbolic_weight.s: src/symbolic_weight.cpp.s
+src/rhea/abstract_variable.s: src/rhea/abstract_variable.cpp.s
 
-.PHONY : src/symbolic_weight.s
+.PHONY : src/rhea/abstract_variable.s
 
 # target to generate assembly for a file
-src/symbolic_weight.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/symbolic_weight.cpp.s
-.PHONY : src/symbolic_weight.cpp.s
+src/rhea/abstract_variable.cpp.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/rhea/abstract_variable.cpp.s
+.PHONY : src/rhea/abstract_variable.cpp.s
 
-src/tableau.obj: src/tableau.cpp.obj
+src/rhea/linear_expression.obj: src/rhea/linear_expression.cpp.obj
 
-.PHONY : src/tableau.obj
+.PHONY : src/rhea/linear_expression.obj
 
 # target to build an object file
-src/tableau.cpp.obj:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/tableau.cpp.obj
-.PHONY : src/tableau.cpp.obj
+src/rhea/linear_expression.cpp.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/rhea/linear_expression.cpp.obj
+.PHONY : src/rhea/linear_expression.cpp.obj
 
-src/tableau.i: src/tableau.cpp.i
+src/rhea/linear_expression.i: src/rhea/linear_expression.cpp.i
 
-.PHONY : src/tableau.i
+.PHONY : src/rhea/linear_expression.i
 
 # target to preprocess a source file
-src/tableau.cpp.i:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/tableau.cpp.i
-.PHONY : src/tableau.cpp.i
+src/rhea/linear_expression.cpp.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/rhea/linear_expression.cpp.i
+.PHONY : src/rhea/linear_expression.cpp.i
 
-src/tableau.s: src/tableau.cpp.s
+src/rhea/linear_expression.s: src/rhea/linear_expression.cpp.s
 
-.PHONY : src/tableau.s
+.PHONY : src/rhea/linear_expression.s
 
 # target to generate assembly for a file
-src/tableau.cpp.s:
-	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/tableau.cpp.s
-.PHONY : src/tableau.cpp.s
+src/rhea/linear_expression.cpp.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/rhea/linear_expression.cpp.s
+.PHONY : src/rhea/linear_expression.cpp.s
+
+src/rhea/simplex_solver.obj: src/rhea/simplex_solver.cpp.obj
+
+.PHONY : src/rhea/simplex_solver.obj
+
+# target to build an object file
+src/rhea/simplex_solver.cpp.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/rhea/simplex_solver.cpp.obj
+.PHONY : src/rhea/simplex_solver.cpp.obj
+
+src/rhea/simplex_solver.i: src/rhea/simplex_solver.cpp.i
+
+.PHONY : src/rhea/simplex_solver.i
+
+# target to preprocess a source file
+src/rhea/simplex_solver.cpp.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/rhea/simplex_solver.cpp.i
+.PHONY : src/rhea/simplex_solver.cpp.i
+
+src/rhea/simplex_solver.s: src/rhea/simplex_solver.cpp.s
+
+.PHONY : src/rhea/simplex_solver.s
+
+# target to generate assembly for a file
+src/rhea/simplex_solver.cpp.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/rhea/simplex_solver.cpp.s
+.PHONY : src/rhea/simplex_solver.cpp.s
+
+src/rhea/symbolic_weight.obj: src/rhea/symbolic_weight.cpp.obj
+
+.PHONY : src/rhea/symbolic_weight.obj
+
+# target to build an object file
+src/rhea/symbolic_weight.cpp.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/rhea/symbolic_weight.cpp.obj
+.PHONY : src/rhea/symbolic_weight.cpp.obj
+
+src/rhea/symbolic_weight.i: src/rhea/symbolic_weight.cpp.i
+
+.PHONY : src/rhea/symbolic_weight.i
+
+# target to preprocess a source file
+src/rhea/symbolic_weight.cpp.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/rhea/symbolic_weight.cpp.i
+.PHONY : src/rhea/symbolic_weight.cpp.i
+
+src/rhea/symbolic_weight.s: src/rhea/symbolic_weight.cpp.s
+
+.PHONY : src/rhea/symbolic_weight.s
+
+# target to generate assembly for a file
+src/rhea/symbolic_weight.cpp.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/rhea/symbolic_weight.cpp.s
+.PHONY : src/rhea/symbolic_weight.cpp.s
+
+src/rhea/tableau.obj: src/rhea/tableau.cpp.obj
+
+.PHONY : src/rhea/tableau.obj
+
+# target to build an object file
+src/rhea/tableau.cpp.obj:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/rhea/tableau.cpp.obj
+.PHONY : src/rhea/tableau.cpp.obj
+
+src/rhea/tableau.i: src/rhea/tableau.cpp.i
+
+.PHONY : src/rhea/tableau.i
+
+# target to preprocess a source file
+src/rhea/tableau.cpp.i:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/rhea/tableau.cpp.i
+.PHONY : src/rhea/tableau.cpp.i
+
+src/rhea/tableau.s: src/rhea/tableau.cpp.s
+
+.PHONY : src/rhea/tableau.s
+
+# target to generate assembly for a file
+src/rhea/tableau.cpp.s:
+	$(MAKE) -f CMakeFiles\VideoGame.dir\build.make CMakeFiles/VideoGame.dir/src/rhea/tableau.cpp.s
+.PHONY : src/rhea/tableau.cpp.s
 
 # Help Target
 help:
@@ -829,78 +910,87 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... install/strip
-	@echo ... src/DrawSystem.obj
-	@echo ... src/DrawSystem.i
-	@echo ... src/DrawSystem.s
-	@echo ... src/Entity.obj
-	@echo ... src/Entity.i
-	@echo ... src/Entity.s
-	@echo ... src/Event.obj
-	@echo ... src/Event.i
-	@echo ... src/Event.s
-	@echo ... src/G_MainMenu.obj
-	@echo ... src/G_MainMenu.i
-	@echo ... src/G_MainMenu.s
-	@echo ... src/GuiSystem.obj
-	@echo ... src/GuiSystem.i
-	@echo ... src/GuiSystem.s
-	@echo ... src/InputHandler.obj
-	@echo ... src/InputHandler.i
-	@echo ... src/InputHandler.s
-	@echo ... src/InputSystem.obj
-	@echo ... src/InputSystem.i
-	@echo ... src/InputSystem.s
-	@echo ... src/Locator.obj
-	@echo ... src/Locator.i
-	@echo ... src/Locator.s
-	@echo ... src/MotionSystem.obj
-	@echo ... src/MotionSystem.i
-	@echo ... src/MotionSystem.s
-	@echo ... src/Pool.obj
-	@echo ... src/Pool.i
-	@echo ... src/Pool.s
-	@echo ... src/Renderer.obj
-	@echo ... src/Renderer.i
-	@echo ... src/Renderer.s
-	@echo ... src/Shader.obj
-	@echo ... src/Shader.i
-	@echo ... src/Shader.s
-	@echo ... src/StateMainMenu.obj
-	@echo ... src/StateMainMenu.i
-	@echo ... src/StateMainMenu.s
-	@echo ... src/System.obj
-	@echo ... src/System.i
-	@echo ... src/System.s
-	@echo ... src/TextureBatch.obj
-	@echo ... src/TextureBatch.i
-	@echo ... src/TextureBatch.s
-	@echo ... src/Timer.obj
-	@echo ... src/Timer.i
-	@echo ... src/Timer.s
-	@echo ... src/abstract_variable.obj
-	@echo ... src/abstract_variable.i
-	@echo ... src/abstract_variable.s
-	@echo ... src/game.obj
-	@echo ... src/game.i
-	@echo ... src/game.s
-	@echo ... src/linear_expression.obj
-	@echo ... src/linear_expression.i
-	@echo ... src/linear_expression.s
-	@echo ... src/loadShader.obj
-	@echo ... src/loadShader.i
-	@echo ... src/loadShader.s
+	@echo ... src/flecs/chunked.obj
+	@echo ... src/flecs/chunked.i
+	@echo ... src/flecs/chunked.s
+	@echo ... src/flecs/column_system.obj
+	@echo ... src/flecs/column_system.i
+	@echo ... src/flecs/column_system.s
+	@echo ... src/flecs/dbg.obj
+	@echo ... src/flecs/dbg.i
+	@echo ... src/flecs/dbg.s
+	@echo ... src/flecs/entity.obj
+	@echo ... src/flecs/entity.i
+	@echo ... src/flecs/entity.s
+	@echo ... src/flecs/err.obj
+	@echo ... src/flecs/err.i
+	@echo ... src/flecs/err.s
+	@echo ... src/flecs/filter.obj
+	@echo ... src/flecs/filter.i
+	@echo ... src/flecs/filter.s
+	@echo ... src/flecs/map.obj
+	@echo ... src/flecs/map.i
+	@echo ... src/flecs/map.s
+	@echo ... src/flecs/misc.obj
+	@echo ... src/flecs/misc.i
+	@echo ... src/flecs/misc.s
+	@echo ... src/flecs/os_api.obj
+	@echo ... src/flecs/os_api.i
+	@echo ... src/flecs/os_api.s
+	@echo ... src/flecs/parser.obj
+	@echo ... src/flecs/parser.i
+	@echo ... src/flecs/parser.s
+	@echo ... src/flecs/reader.obj
+	@echo ... src/flecs/reader.i
+	@echo ... src/flecs/reader.s
+	@echo ... src/flecs/snapshot.obj
+	@echo ... src/flecs/snapshot.i
+	@echo ... src/flecs/snapshot.s
+	@echo ... src/flecs/stage.obj
+	@echo ... src/flecs/stage.i
+	@echo ... src/flecs/stage.s
+	@echo ... src/flecs/stats.obj
+	@echo ... src/flecs/stats.i
+	@echo ... src/flecs/stats.s
+	@echo ... src/flecs/system.obj
+	@echo ... src/flecs/system.i
+	@echo ... src/flecs/system.s
+	@echo ... src/flecs/table.obj
+	@echo ... src/flecs/table.i
+	@echo ... src/flecs/table.s
+	@echo ... src/flecs/type.obj
+	@echo ... src/flecs/type.i
+	@echo ... src/flecs/type.s
+	@echo ... src/flecs/vector.obj
+	@echo ... src/flecs/vector.i
+	@echo ... src/flecs/vector.s
+	@echo ... src/flecs/worker.obj
+	@echo ... src/flecs/worker.i
+	@echo ... src/flecs/worker.s
+	@echo ... src/flecs/world.obj
+	@echo ... src/flecs/world.i
+	@echo ... src/flecs/world.s
+	@echo ... src/flecs/writer.obj
+	@echo ... src/flecs/writer.i
+	@echo ... src/flecs/writer.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
-	@echo ... src/simplex_solver.obj
-	@echo ... src/simplex_solver.i
-	@echo ... src/simplex_solver.s
-	@echo ... src/symbolic_weight.obj
-	@echo ... src/symbolic_weight.i
-	@echo ... src/symbolic_weight.s
-	@echo ... src/tableau.obj
-	@echo ... src/tableau.i
-	@echo ... src/tableau.s
+	@echo ... src/rhea/abstract_variable.obj
+	@echo ... src/rhea/abstract_variable.i
+	@echo ... src/rhea/abstract_variable.s
+	@echo ... src/rhea/linear_expression.obj
+	@echo ... src/rhea/linear_expression.i
+	@echo ... src/rhea/linear_expression.s
+	@echo ... src/rhea/simplex_solver.obj
+	@echo ... src/rhea/simplex_solver.i
+	@echo ... src/rhea/simplex_solver.s
+	@echo ... src/rhea/symbolic_weight.obj
+	@echo ... src/rhea/symbolic_weight.i
+	@echo ... src/rhea/symbolic_weight.s
+	@echo ... src/rhea/tableau.obj
+	@echo ... src/rhea/tableau.i
+	@echo ... src/rhea/tableau.s
 .PHONY : help
 
 
